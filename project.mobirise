@@ -1,0 +1,2023 @@
+{
+  "settings": {
+    "name": "Kids",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "kids-m4",
+      "title": "KidsM4",
+      "styling": {
+        "primaryColor": "#ffc85b",
+        "secondaryColor": "#45b3df",
+        "successColor": "#00B15C",
+        "infoColor": "#12265a",
+        "warningColor": "#fa9db7",
+        "dangerColor": "#444444",
+        "mainFont": "Muli",
+        "display1Font": "Nunito",
+        "display1Size": 5.37,
+        "display2Font": "Nunito",
+        "display2Size": 3,
+        "display5Font": "Nunito",
+        "display5Size": 1.75,
+        "display7Font": "Muli",
+        "display7Size": 1.1,
+        "display4Font": "Muli",
+        "display4Size": 1,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false,
+        "arrowColor": "#444444"
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.5.0",
+    "siteFonts": [],
+    "imageResize": true,
+    "chatbutton": {},
+    "favicon": false,
+    "mbrsiteDomain": "31gjcw2dge",
+    "cssOptimize": false,
+    "lazyLoad": false,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "witsec-language": false,
+    "witsec-white-label": false,
+    "witsec-mailform": false,
+    "pwa-switcher": false,
+    "uniqCompNum": 13,
+    "versionPublish": "5.5.0"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "min-height": "120px",
+            ".navbar-dropdown": {
+              "position": "absolute",
+              "& when (@sticky)": {
+                "position": "fixed"
+              }
+            },
+            ".navbar": {
+              "display": "flex",
+              "flex-wrap": "nowrap",
+              "background": "@menuBgColor",
+              "min-height": "77px",
+              "padding": ".5rem 0"
+            },
+            ".dropdown-menu": {
+              "border-radius": "20px",
+              "min-width": "250px"
+            },
+            ".dropdown-item:active": {
+              "background-color": "transparent"
+            },
+            ".nav-item a": {
+              "display": "flex",
+              "align-items": "center",
+              "padding": "0 0.5rem !important",
+              "margin": "0 1.2rem !important"
+            },
+            ".nav-item:focus, .nav-link:focus": {
+              "outline": "none"
+            },
+            ".btn": {
+              "display": "inline-flex",
+              "align-items": "center",
+              "position": "relative",
+              "width": "40px",
+              "height": "40px",
+              "border-radius": "50%",
+              "padding": "0",
+              ".mbr-iconfont": {
+                "font-size": "1.5rem",
+                "margin": "0"
+              }
+            },
+            ".menu-logo": {
+              ".navbar-brand": {
+                "display": "flex",
+                "align-items": "center"
+              }
+            },
+            ".navbar-dropdown .navbar-logo": {
+              "margin-right": "0.8rem"
+            },
+            ".navbar-toggleable-sm .navbar-collapse": {
+              ".navbar-nav": {
+                "flex-wrap": "wrap",
+                "padding-left": "0"
+              },
+              ".navbar-buttons": {
+                "padding-left": "0",
+                "padding-bottom": "0"
+              }
+            },
+            ".dropdown": {
+              ".dropdown-menu": {
+                "background": "transparent",
+                "display": "none",
+                "padding-top": "4.5rem",
+                "padding-bottom": "2rem",
+                "text-align": "left",
+                "& > .dropdown > .dropdown-item, & > .dropdown-item": {
+                  "font-weight": "900",
+                  "font-family": "@display2Font",
+                  "width": "auto",
+                  "padding": "4px 30px !important",
+                  "margin": "0 !important"
+                },
+                ".dropdown-submenu": {
+                  "margin": "0"
+                }
+              },
+              "&.open > .dropdown-menu": {
+                "display": "block"
+              }
+            },
+            ".navbar-toggleable-sm": {
+              "&.opened:after": {
+                "position": "absolute",
+                "width": "100vw",
+                "height": "100vh",
+                "content": "none",
+                "background-color": "rgba(0, 0, 0, 0.1)",
+                "left": "0",
+                "bottom": "0",
+                "transform": "translateY(100%)",
+                "z-index": "1000"
+              }
+            },
+            "button.navbar-toggler": {
+              "width": "31px",
+              "height": "18px",
+              "cursor": "pointer",
+              "transition": "all .2s",
+              "top": "1.5rem",
+              "right": "1rem",
+              "position": "absolute",
+              "left": "1rem",
+              "&:focus": {
+                "outline": "none"
+              },
+              ".hamburger span": {
+                "position": "absolute",
+                "right": "0",
+                "width": "30px",
+                "height": "2px",
+                "border-right": "5px",
+                "background-color": "@hamburgerColor",
+                "&:nth-child(1)": {
+                  "top": "0",
+                  "transition": "all .2s"
+                },
+                "&:nth-child(2)": {
+                  "top": "8px",
+                  "transition": "all .15s"
+                },
+                "&:nth-child(3)": {
+                  "top": "8px",
+                  "transition": "all .15s"
+                },
+                "&:nth-child(4)": {
+                  "top": "16px",
+                  "transition": "all .2s"
+                }
+              }
+            },
+            "nav.opened .hamburger span": {
+              "&:nth-child(1)": {
+                "top": "8px",
+                "width": "0",
+                "opacity": "0",
+                "right": "50%",
+                "transition": "all .2s"
+              },
+              "&:nth-child(2)": {
+                "transform": "rotate(45deg)",
+                "transition": "all .25s"
+              },
+              "&:nth-child(3)": {
+                "transform": "rotate(-45deg)",
+                "transition": "all .25s"
+              },
+              "&:nth-child(4)": {
+                "top": "8px",
+                "width": "0",
+                "opacity": "0",
+                "right": "50%",
+                "transition": "all .2s"
+              }
+            },
+            ".collapsed": {
+              "&.navbar-expand": {
+                "flex-direction": "column"
+              },
+              ".navbar-collapse": {
+                "display": "none !important",
+                "padding-right": "0 !important",
+                "&.collapsing, &.show": {
+                  "display": "block !important",
+                  ".navbar-nav": {
+                    "display": "block",
+                    ".nav-item": {
+                      "clear": "both",
+                      "& when (@showButtons = false)": {
+                        "&:last-child": {
+                          "margin-bottom": "1rem"
+                        }
+                      }
+                    }
+                  },
+                  ".navbar-buttons": {
+                    "text-align": "center",
+                    "&:last-child": {
+                      "margin-bottom": "1rem"
+                    }
+                  }
+                },
+                ".nav-item": {
+                  "text-align": "left"
+                }
+              },
+              "@media (min-width: 992px)": {
+                "&:not(.navbar-short) .navbar-collapse when (@showLogo)": {
+                  "max-height": "(100vh - ((15 * @logoSize) / 8))"
+                }
+              },
+              "button.navbar-toggler": {
+                "display": "block"
+              },
+              ".navbar-brand": {
+                "margin-left": "1rem !important"
+              },
+              ".navbar-toggleable-sm": {
+                "flex-direction": "column"
+              },
+              ".dropdown": {
+                ".dropdown-menu": {
+                  "width": "100%",
+                  "text-align": "center",
+                  "position": "relative",
+                  "opacity": "0",
+                  "display": "block",
+                  "height": "0",
+                  "visibility": "hidden",
+                  "padding": "0",
+                  "transition-duration": ".5s",
+                  "transition-property": "opacity, padding, height"
+                },
+                "&.open > .dropdown-menu": {
+                  "position": "relative",
+                  "opacity": "1",
+                  "height": "auto",
+                  "padding": "1.4rem 0",
+                  "visibility": "visible"
+                },
+                ".dropdown-submenu": {
+                  "left": "0",
+                  "text-align": "center",
+                  "width": "100%"
+                }
+              }
+            },
+            "@media (max-width: 991px)": {
+              "min-height": "85px",
+              "&.navbar-expand": {
+                "flex-direction": "column"
+              },
+              "img": {
+                "height": "3.8rem !important"
+              },
+              "button.navbar-toggler": {
+                "display": "block"
+              },
+              ".navbar-brand": {
+                "margin-left": "3.5rem !important"
+              },
+              ".navbar-toggleable-sm": {
+                "flex-direction": "column"
+              },
+              ".navbar-collapse": {
+                "display": "none !important",
+                "padding-right": "0 !important",
+                "&.collapsing, &.show": {
+                  "display": "block !important",
+                  ".navbar-nav": {
+                    "display": "block",
+                    "text-align": "center",
+                    ".nav-item": {
+                      "clear": "both",
+                      "& when (@showButtons = false)": {
+                        "&:last-child": {
+                          "margin-bottom": "1rem"
+                        }
+                      }
+                    }
+                  },
+                  ".navbar-buttons": {
+                    "text-align": "center",
+                    "&:last-child": {
+                      "margin-bottom": "1rem"
+                    }
+                  }
+                }
+              },
+              ".dropdown": {
+                ".dropdown-menu": {
+                  "width": "100%",
+                  "text-align": "center",
+                  "position": "relative",
+                  "opacity": "0",
+                  "display": "block",
+                  "height": "0",
+                  "visibility": "hidden",
+                  "padding": "0",
+                  "transition-duration": ".5s",
+                  "transition-property": "opacity, padding, height"
+                },
+                "&.open > .dropdown-menu": {
+                  "position": "relative",
+                  "opacity": "1",
+                  "height": "auto",
+                  "padding": "1.4rem 0",
+                  "visibility": "visible"
+                },
+                ".dropdown-submenu": {
+                  "left": "0",
+                  "text-align": "center",
+                  "width": "100%"
+                },
+                ".dropdown-toggle[data-toggle=\"dropdown-submenu\"]::after": {
+                  "content": "\"\""
+                }
+              }
+            },
+            "@media (max-width: 767px)": {
+              ".navbar-logo img": {
+                "display": "none !important"
+              },
+              ".navbar-collapse": {
+                "max-height": "100vh !important"
+              },
+              ".nav-link": {
+                "justify-content": "start !important"
+              },
+              ".navbar.opened": {
+                "height": "100vh"
+              },
+              ".navbar-toggleable-sm": {
+                "width": "100% !important"
+              },
+              ".dropdown-menu": {
+                "box-shadow": "none !important",
+                "background": "@mobileBgColor !important"
+              }
+            },
+            "@media (min-width: 767px)": {
+              ".menu-logo": {
+                "flex-shrink": "0"
+              }
+            },
+            ".navbar-collapse": {
+              "flex-basis": "auto"
+            },
+            ".link": {
+              "color": "#12265a",
+              "font-weight": "900",
+              "font-family": "@display2Font",
+              "transition": "0.4s"
+            },
+            ".span-link": {
+              "padding": "0 0.5rem"
+            },
+            ".btn1:before, .btn2:before": {
+              "content": "''",
+              "position": "absolute",
+              "top": "-7px",
+              "left": "-7px",
+              "width": "52px",
+              "height": "52px",
+              "border-radius": "30px",
+              "animation": "spin_left 5s linear infinite",
+              "animation-play-state": "paused"
+            },
+            ".btn1:before": {
+              "border": "2px dashed @borderColor1"
+            },
+            ".btn2::before": {
+              "border": "2px dashed @borderColor2"
+            },
+            ".btn:hover::before": {
+              "animation-play-state": "running"
+            },
+            "@keyframes spin_left": {
+              "0%": {
+                "transform": "rotate(360deg)"
+              }
+            },
+            ".container-fluid": {
+              "max-width": "1200px"
+            },
+            "@media (max-width: 992px)": {
+              ".navbar-collapse.show": {
+                "overflow": "visible !important"
+              },
+              ".dropdown-item": {
+                "color": "#fff"
+              },
+              ".nav-item.open .nav-link, .link:hover": {
+                "color": "#fff",
+                "background": "@itemsHover",
+                "border-radius": "5px"
+              },
+              ".logo-name": {
+                "margin-top": "0.5rem"
+              },
+              ".navbar-brand": {
+                "justify-content": "center"
+              },
+              ".mbr-section-btn": {
+                "order": "1",
+                "flex": "0 0 auto",
+                "width": "auto",
+                "max-width": "100%"
+              },
+              ".nav-item a": {
+                "margin": "0 0.5rem !important"
+              },
+              ".navbar-nav .nav-link": {
+                "color": "@mobileItemsColor",
+                "display": "inline-block"
+              },
+              ".navbar-collapse": {
+                "background-color": "@mobileBgColor",
+                "order": "2",
+                "flex": "0 0 100%",
+                "max-width": "100%"
+              },
+              ".navbar": {
+                "height": "90px"
+              },
+              ".menu-logo": {
+                "flex-basis": "0",
+                "flex-positive": "1",
+                "flex-grow": "1",
+                "max-width": "70%",
+                "margin-right": "auto",
+                "margin-left": "auto"
+              },
+              ".btn1": {
+                "display": "none"
+              },
+              ".mbr-section-title": {
+                "color": "#fff"
+              },
+              ".container-fluid": {
+                "display": "flex",
+                "flex-direction": "row",
+                "justify-content": "space-between",
+                "flex-wrap": "wrap"
+              },
+              ".navbar-toggleable-sm": {
+                "background-color": "@mobileBgColor"
+              },
+              ".span-link": {
+                "color": "#fff"
+              },
+              ".nav-item": {
+                "text-align": "left"
+              }
+            },
+            "@media (min-width: 992px)": {
+              ".dropdown-item": {
+                "color": "#12265a"
+              },
+              ".nav-item.open .nav-link, .link:hover": {
+                "color": "@infoColor !important",
+                "background": "@itemsHover",
+                "border-radius": "5px"
+              },
+              ".logo-name": {
+                "margin-top": "2rem"
+              },
+              ".navbar-collapse": {
+                "justify-content": "space-between"
+              },
+              ".navbar-nav": {
+                "margin-left": "auto",
+                "margin-right": "auto"
+              },
+              ".container-fluid": {
+                "padding": "0 1rem"
+              },
+              ".dropdown-menu::after": {
+                "content": "''",
+                "position": "absolute",
+                "top": "4rem",
+                "bottom": "1.4rem",
+                "left": "10px",
+                "right": "10px",
+                "border": "2px dashed @warningColor",
+                "border-radius": "10px",
+                "z-index": "0",
+                "pointer-events": "none"
+              },
+              ".dropdown-menu::before": {
+                "content": "\"\"",
+                "position": "absolute",
+                "top": "3.4rem",
+                "bottom": "0.8rem",
+                "left": "0px",
+                "right": "0px",
+                "border-radius": "10px",
+                "background": "@menuBgColor",
+                "z-index": "-1"
+              }
+            },
+            ".mbr-section-title": {
+              "font-weight": "900"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#fa9db7"
+            },
+            ".mbr-section-btn": {
+              "display": "flex"
+            },
+            ".dropdown-item:hover": {
+              "color": "@itemsHover !important"
+            },
+            ".btn-primary:hover": {
+              "background-color": "@primaryColor !important",
+              "border-color": "@primaryColor !important"
+            },
+            ".btn-warning:hover": {
+              "background-color": "@warningColor !important",
+              "border-color": "@warningColor !important"
+            },
+            ".dropdown-toggle::after": {
+              "content": "'+'",
+              "border": "none !important",
+              "top": "25% !important"
+            },
+            ".btn-primary:focus": {
+              "background-color": "@primaryColor !important",
+              "border-color": "@primaryColor !important"
+            },
+            ".btn-warning:focus": {
+              "background-color": "@warningColor !important",
+              "border-color": "@warningColor !important"
+            },
+            ".navbar-dropdown.navbar-short .navbar-brand": {
+              "padding-top": ".3125rem",
+              "padding-bottom": ".3125rem"
+            }
+          },
+          "_name": "menu1",
+          "_sourceTheme": "kids-m4",
+          "_customHTML": "<section class=\"menu kidsm4_menu1\" group=\"Menu\" plugins=\"DropDown, TouchSwipe\" always-top=\"\" global=\"\" not-draggable=\"\" once=\"menu\" position-absolute=\"\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked=\"\">\n\t\t<input type=\"range\" title=\"Logo Size\" inline=\"\" name=\"logoSize\" min=\"3\" max=\"8\" step=\"0.5\" value=\"5\" condition=\"showLogo\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Sticky\" name=\"sticky\" checked=\"\">\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked=\"\">\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubTitle\" checked=\"\">\n\t\t<!-- <input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\" checked> -->\n\t\t<input type=\"checkbox\" title=\"Menu Items\" name=\"showItems\" checked=\"\">\n\t\t<!-- <input type=\"color\" title=\"Items Hover Color\" name=\"itemsHoverColor\" value=\"#ed4266\" condition=\"showItems\"> -->\n\t\t<input type=\"checkbox\" title=\"Button(s)\" name=\"showButtons\" checked=\"\">\n\t\t<header>Color</header>\n\t\t<input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#ffffff\">\n\t\t<input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#ffffff\">\n\t\t<input type=\"color\" title=\"Items Hover\" name=\"itemsHover\" value=\"#ffc85b\">\n\t\t<input type=\"color\" title=\"Mobile Bg Color\" name=\"mobileBgColor\" value=\"#313131\">\n\t\t<input type=\"color\" title=\"Mobile Items Color\" name=\"mobileItemsColor\" value=\"#ffffff\">\n\t\t<input type=\"color\" title=\"Border Color 1\" name=\"borderColor1\" value=\"#ffc85b\">\n\t\t<input type=\"color\" title=\"Border Color 2\" name=\"borderColor2\" value=\"#fa6992\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<nav class=\"navbar navbar-expand beta-menu navbar-dropdown navbar-toggleable-sm\" mbr-class=\"{'navbar-fixed-top':sticky}\">\n\t\t<div class=\"container-fluid\">\n\t\t\t<button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n\t\t\t\t<div class=\"hamburger\">\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t</div>\n\t\t\t</button>\n\t\t\t<div class=\"menu-logo\">\n\t\t\t\t<div class=\"navbar-brand\">\n\t\t\t\t\t<span mbr-if=\"showLogo\" class=\"navbar-logo\">\n\t\t\t\t\t\t<a href=\"#\">\n\t\t\t\t\t\t\t<img src=\"../_images/amimals/animals1.png\" alt=\"Mobirise\" mbr-style=\"{'height': logoSize + 'rem'}\">\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</span>\n\t\t\t\t\t<div class=\"logo-name align-center\">\n\t\t\t\t\t\t<h3 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showTitle\" data-app-selector=\".logo-name .mbr-section-title\">\n\t\t\t\t\t\t\tBABY</h3>\n\t\t\t\t\t\t<h3 class=\"mbr-section-subtitle align-center mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\" mbr-class=\"{'':showTitle}\" data-app-selector=\".mbr-section-subtitle\">\n\t\t\t\t\t\t\tKIDS\n\t\t\t\t\t\t</h3>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n\t\t\t\t<ul mbr-if=\"showItems\" mbr-menu=\"\" class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-7\" mbr-class=\"{'nav-right': !showButtons,\n                'navbar-nav-top-padding': isPublish &amp;&amp; !showBrand &amp;&amp; !showLogo}\">\n\t\t\t\t\t<li class=\"nav-item\">\n\t\t\t\t\t\t<a class=\"nav-link link\" href=\"#\" data-app-selector=\".dropdown-item, .nav-link\" data-app-placeholder=\"Type Text\">HOME</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"nav-item\">\n\t\t\t\t\t\t<a class=\"nav-link link\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">PAGES</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"nav-item dropdown\">\n\t\t\t\t\t\t<a class=\"nav-link link\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\"> PORTFOLIO</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"nav-item\">\n\t\t\t\t\t\t<a class=\"nav-link link\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\"> SHOP</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"nav-item\">\n\t\t\t\t\t\t<a class=\"nav-link link\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\"> CONTACTS</a>\n\t\t\t\t\t</li>\n\t\t\t\t</ul>\n\t\t\t</div>\n\t\t\t<div mbr-if=\"showButtons\" mbr-buttons=\"\" mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn\">\n\t\t\t\t<a class=\"btn btn1 btn-primary\" href=\"#\" data-app-placeholder=\"Type Text\">\n\t\t\t\t\t<span mbr-if=\"\" mbr-icon=\"\" class=\"mbr-iconfont mbr-iconfont-btn socicon mbri-mobile\"></span>\n\t\t\t\t</a>\n\t\t\t\t<a class=\"btn btn2 btn-warning\" href=\"#\" data-app-placeholder=\"Type Text\">\n\t\t\t\t\t<span mbr-if=\"\" mbr-icon=\"\" class=\"mbr-iconfont mbr-iconfont-btn socicon mbri-letter\"></span>\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</nav>\n</section>",
+          "_cid": "tyWS2oJdze",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "menu",
+          "_params": {},
+          "_anchor": "menu1-1"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-section-subtitle": {
+              "font-family": "@display2Font",
+              "font-weight": "900",
+              "background-color": "lighten(@secondaryColor, 12%)",
+              "padding": "0 1rem",
+              "border-radius": "5px",
+              "display": "inline-block"
+            },
+            ".mbr-text": {
+              "margin-bottom": "1.3rem"
+            },
+            ".svg-1": {
+              "position": "absolute",
+              "bottom": "0"
+            },
+            ".svg-1 path": {
+              "fill": "@LineColor"
+            },
+            ".container-fluid": {
+              "max-width": "1200px"
+            },
+            ".mbr-arrow": {
+              "z-index": "1"
+            },
+            "@media (max-width: 767px)": {
+              "padding-top": "(@paddingTop * 5px)",
+              "padding-bottom": "(@paddingBottom * 5px)",
+              ".container-fluid": {
+                "padding": "0 1rem"
+              },
+              ".mbr-text": {
+                "color": "#343549"
+              }
+            },
+            "@media (min-width: 768px)": {
+              ".container-fluid": {
+                "padding": "0 1.8rem"
+              }
+            }
+          },
+          "_name": "header1",
+          "_sourceTheme": "kids-m4",
+          "_customHTML": "<section group=\"Header\" class=\"header1 kidsm4_header1\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"12\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"12\" condition=\"fullScreen == false\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Arrow\" name=\"showArrow\">\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked=\"\">\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubTitle\" checked=\"\">\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\" checked=\"\">\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked=\"\">\n\t\t<select name=\"alignContent\" title=\"Align Content\">\n\t\t\t<option value=\"1\" selected=\"\">Left</option>\n\t\t\t<option value=\"2\">Center</option>\n\t\t\t<option value=\"3\">Right</option>\n\t\t</select>\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax=\"\">\n\t\t\t<input type=\"image\" title=\"Image\" value=\"../_images/school.jpg\">\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\">\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/201169087\">\n\t\t</fieldset>\n\t\t<header>Color</header>\n\t\t<input type=\"color\" title=\"Line\" name=\"LineColor\" value=\"#ffffff\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n\t\t<input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n\t<div class=\"container-fluid\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-md-12 col-lg-12\" mbr-class=\"{'align-center' : alignContent == 2, 'align-right' : alignContent == 3}\">\n\t\t\t\t<h3 class=\"mbr-section-subtitle mbr-white mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showSubTitle\" data-app-selector=\".mbr-section-subtitle\">THE BEST IN OUR SCHOOL!</h3>\n\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">Our Courses!</h1>\n\t\t\t\t<p class=\"mbr-text pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Lorem ipsum dolor sit amet, consectetur adipiscing\n\t\t\t\t\telit. <br> Sed eu dui non diam eleifend egestas</p>\n\t\t\t\t<div mbr-buttons=\"\" mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"#\" data-app-placeholder=\"Type Text\">Read\n\t\t\t\t\t\tMore</a></div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n\t\t<a href=\"#next\">\n\t\t\t<i class=\"mbri-down mbr-iconfont\"></i>\n\t\t</a>\n\t</div>\n\t<svg class=\"svg-1\" data-name=\"Layer 2\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1428.75 62.05\">\n\t\t<path class=\"cls-1\" d=\"M-114,132s185,44,434,18c0,0,304-41,551,0,0,0,290.5,57.25,443.75.13v43.69H-114Z\" transform=\"translate(114 -131.78)\"></path>\n\t</svg>\n</section>",
+          "_cid": "tyWS0U6WEJ",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "header1-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value",
+              "& when (@gradientBg)": {
+                "background": "linear-gradient(0deg, @bg-value, @color2)"
+              }
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".nav": {
+              "border": "2px dashed @activeTabColor1",
+              "border-radius": "30px"
+            },
+            ".nav-tabs": {
+              "display": "table",
+              "margin-top": "2rem",
+              "margin-bottom": "2rem",
+              "padding": "3px",
+              ".nav-item": {
+                "display": "table-cell"
+              }
+            },
+            ".nav-tabs .nav-link": {
+              "display": "block",
+              "color": "@secondaryColor",
+              "box-sizing": "border-box",
+              "font-style": "normal",
+              "background": "@tabColor",
+              "font-weight": "900",
+              "margin": "0px",
+              "border-radius": "30px !important",
+              "border": "none",
+              "text-align": "center",
+              "transition": "all .3s",
+              "&:hover": {
+                "background-color": "transparent",
+                "color": "@warningColor"
+              },
+              "&.active": {
+                "color": "contrast(@activeTabColor1)",
+                "background": "@activeTabColor1"
+              }
+            },
+            ".container-fluid": {
+              "max-width": "1200px"
+            },
+            "@media (min-width: 768px)": {
+              ".container-fluid": {
+                "padding-left": "0.5rem"
+              }
+            },
+            "@media (min-width: 992px)": {
+              ".left-wrapper": {
+                "padding-left": "5rem",
+                "padding-right": "1rem"
+              }
+            },
+            ".imageContainer": {
+              "display": "inline-block",
+              "position": "relative",
+              "z-index": "0",
+              "margin-bottom": "~\"calc(2rem + 5%)\"",
+              "img": {
+                "width": "100%",
+                "border-radius": "30px",
+                "transform": "translate(1%, 5%)"
+              },
+              "&:before": {
+                "content": "''",
+                "position": "absolute",
+                "top": "0",
+                "left": "0",
+                "width": "96%",
+                "height": "100%",
+                "border": "2px dashed @warningColor",
+                "border-radius": "30px",
+                "z-index": "-1"
+              }
+            },
+            ".mbr-section-subtitle": {
+              "margin-bottom": "2rem"
+            },
+            ".mbr-text": {
+              "margin-bottom": "0"
+            },
+            ".btn-underline": {
+              "display": "inline-flex",
+              "align-items": "center",
+              "margin-top": "2rem",
+              "font-weight": "900"
+            },
+            ".mbr-iconfont": {
+              "transition": "all 0.3s",
+              "color": "currentColor",
+              "font-size": "2rem",
+              "margin-left": "1rem",
+              "font-weight": "900"
+            },
+            ".btn-underline:hover .icon-btn": {
+              "transform": "rotateZ(180deg)"
+            },
+            ".mbr-section-btn": {
+              "margin": "0"
+            },
+            "@media (max-width: 991px)": {
+              ".left-wrapper": {
+                "padding-left": "1.2rem"
+              }
+            },
+            "@media (max-width: 767px)": {
+              "padding-top": "(@paddingTop * 5px)",
+              "padding-bottom": "(@paddingBottom * 5px)",
+              ".mbr-section-title": {
+                "text-align": "center"
+              },
+              ".mbr-section-subtitle": {
+                "text-align": "center"
+              },
+              ".nav-tabs": {
+                "width": "100%",
+                ".nav-link": {
+                  "padding": ".2rem"
+                }
+              },
+              ".container-fluid": {
+                "padding": "0"
+              },
+              ".imageContainer": {
+                "margin-left": "1rem"
+              }
+            },
+            ".mbr-section-title": {
+              "text-align": "left"
+            }
+          },
+          "_name": "tabs2",
+          "_sourceTheme": "kids-m4",
+          "_customHTML": "<section class=\"tabs2 kidsm4_tabs2 tabs\" group=\"Accordion & Toggles & Tabs\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background':bg.parallax}\" plugins=\"mbr-tabs\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header>Size</header>\n\t\t<input type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"6\">\n\t\t<input type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"5\">\n\t\t<select title=\"Tabs Count\" name=\"bootstrapTabs\">\n\t\t\t<option value=\"1\">1</option>\n\t\t\t<option value=\"2\">2</option>\n\t\t\t<option value=\"3\" selected>3</option>\n\t\t</select>\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n\t\t<input type=\"color\" title=\"Tab Color\" name=\"tabColor\" value=\"#f4f8fa\">\n\t\t<input type=\"color\" title=\"Active Tab Color\" name=\"activeTabColor1\" value=\"#45b3df\">\n\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"../_images/children.jpg\" parallax>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/201169087\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Gradient\" name=\"gradientBg\" condition=\"bg.type=='color'\" checked>\n\t\t<input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#ffffff\" condition=\"gradientBg && bg.type == 'color'\">\n\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t</div>\n\n\t<div class=\"container-fluid\">\n\t\t<div class=\"media-container-row\">\n\t\t\t<div class=\"col-lg-6 col-md-12 imageContainer\">\n\t\t\t\t<img src=\"../_images/children.jpg\" alt=\"Mobirise\">\n\t\t\t</div>\n\t\t\t<div class=\"col-lg-6 col-md-12 left-wrapper\">\n\t\t\t\t<h2 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><span class=\"line-bg-warning\">Our Courses</span></h2>\n\t\t\t\t<h3 class=\"mbr-section-subtitle  mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\" data-app-selector=\".mbr-section-subtitle\"><span class=\"line-bg-primary\">Programs</span></h3>\n\t\t\t\t<ul class=\"nav nav-tabs\" role=\"tablist\" data-app-placeholder=\"Type Title\">\n\t\t\t\t\t<li mbr-buttons mbr-theme-style=\"display-7\" class=\"nav-item\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrLink,-mbrBtnRemove\"><a class=\"nav-link mbr-fonts-style active\" role=\"tab\" data-toggle=\"tab\" href=\"#tabs2-3_tab0\" data-app-placeholder=\"Введите Текст\" aria-selected=\"true\">\n\t\t\t\t\t\t\tActivity\n\t\t\t\t\t\t</a></li>\n\t\t\t\t\t<li mbr-buttons mbr-theme-style=\"display-7\" class=\"nav-item\" mbr-if=\"bootstrapTabs > 1\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrLink,-mbrBtnRemove\"><a class=\"nav-link mbr-fonts-style active\" role=\"tab\" data-toggle=\"tab\" href=\"#tabs2-3_tab1\" data-app-placeholder=\"Введите Текст\" aria-selected=\"true\">\n\t\t\t\t\t\t\tParty\n\t\t\t\t\t\t</a></li>\n\t\t\t\t\t<li mbr-buttons mbr-theme-style=\"display-7\" class=\"nav-item\" mbr-if=\"bootstrapTabs > 2\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrLink,-mbrBtnRemove\"><a class=\"nav-link mbr-fonts-style active\" role=\"tab\" data-toggle=\"tab\" href=\"#tabs2-3_tab2\" data-app-placeholder=\"Введите Текст\" aria-selected=\"true\">\n\t\t\t\t\t\t\tHolidays\n\t\t\t\t\t\t</a></li>\n\t\t\t\t</ul>\n\t\t\t\t<div class=\"tab-content\">\n\t\t\t\t\t<div id=\"tab1\" class=\"tab-pane in active\" role=\"tabpanel\">\n\t\t\t\t\t\t<div class=\"row align-items-center\">\n\t\t\t\t\t\t\t<div mbr-class=\"{'col-lg-12':showImages,'col-md-12':!showImages}\" class=\"left-column\">\n\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text,.mbr-section-btn\">\n\t\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Autem laudantium in\n\t\t\t\t\t\t\t\t\tadipisci ipsa optio quas id excepturi non, eos cupiditate\n\t\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur\n\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn-underline text-warning\" href=\"#\" data-app-placeholder=\"Type Text\">Read More<span class=\"icon-btn mbri-star mbr-iconfont mbr-iconfont-btn\"></span></a>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div id=\"tab2\" class=\"tab-pane\" role=\"tabpanel\">\n\t\t\t\t\t\t<div class=\"row align-items-center\">\n\t\t\t\t\t\t\t<div mbr-class=\"{'col-lg-12':showImages,'col-md-12':!showImages}\" class=\"right-column\">\n\n\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text,.mbr-section-btn\">\n\t\t\t\t\t\t\t\t\tAutem laudantium in adipisci ipsa optio quas id excepturi non, eos cupiditate\n\t\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit.\n\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn-underline text-warning\" href=\"#\" data-app-placeholder=\"Type Text\">Read More<span class=\"icon-btn mbri-star mbr-iconfont mbr-iconfont-btn\"></span></a>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div id=\"tab3\" class=\"tab-pane\" role=\"tabpanel\">\n\t\t\t\t\t\t<div class=\"row align-items-center\">\n\t\t\t\t\t\t\t<div mbr-class=\"{'col-lg-12':showImages,'col-md-12':!showImages}\" class=\"left-column\">\n\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text,.mbr-section-btn\">\n\t\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Autem laudantium in\n\t\t\t\t\t\t\t\t\tadipisci ipsa optio quas id excepturi non, eos cupiditate\n\t\t\t\t\t\t\t\t\tLorem ipsum dolor\n\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn-underline text-warning\" href=\"#\" data-app-placeholder=\"Type Text\">Read More<span class=\"icon-btn mbri-star mbr-iconfont mbr-iconfont-btn\"></span></a>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "tyWSJd642j",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "tabs2-3"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "@media (max-width: 767px)": {
+              "padding-top": "(@paddingTop * 5px)",
+              "padding-bottom": "(@paddingBottom * 5px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-text": {
+              "margin": "0"
+            },
+            ".card-box": {
+              "padding": "0 2rem",
+              "width": "100%",
+              "text-align": "center"
+            },
+            ".mbr-iconfont": {
+              "transition": "all 0.3s",
+              "margin-left": "1rem",
+              "line-height": "0"
+            },
+            ".card-inner": {
+              "border-radius": "30px",
+              "position": "relative",
+              "width": "100%",
+              "height": "100%",
+              "z-index": "1"
+            },
+            ".card-inner1": {
+              "background": "@CardBg1"
+            },
+            ".card-inner2": {
+              "background": "@CardBg2"
+            },
+            ".card-inner3": {
+              "background": "@CardBg3"
+            },
+            "img": {
+              "width": "auto",
+              "height": "140px",
+              "margin-top": "1rem",
+              "margin-left": "auto",
+              "margin-right": "auto"
+            },
+            ".card": {
+              "border-radius": "30px",
+              "align-items": "center",
+              "position": "relative"
+            },
+            ".container-fluid": {
+              "max-width": "1200px"
+            },
+            ".btn-underline": {
+              "display": "inline-flex",
+              "align-items": "center",
+              "margin-top": "1rem",
+              "font-weight": "700",
+              "margin-left": "auto",
+              "margin-right": "auto",
+              "padding": "0 1rem"
+            },
+            ".btn-underline:hover .icon-btn": {
+              "transform": "rotateZ(180deg)"
+            },
+            ".mbr-section-btn": {
+              "margin-bottom": "3.5rem"
+            },
+            "@media (max-width: 991px)": {
+              ".card": {
+                "margin-bottom": "1rem"
+              }
+            },
+            "@media (min-width: 768px)": {
+              ".container-fluid": {
+                "padding": "0 1.5rem"
+              }
+            },
+            ".card-img": {
+              "text-align": "center",
+              "margin-top": "2.5rem",
+              "padding": "0 2rem"
+            },
+            ".inner-dashed-border": {
+              "position": "absolute",
+              "left": "0",
+              "top": "0",
+              "width": "100%",
+              "height": "100%"
+            },
+            ".card:hover .inner-dashed-border": {
+              "animation-play-state": "running",
+              "stroke": "contrast(@secondaryColor, darken(@secondaryColor, 50%), #ffffff, 60%)"
+            },
+            "@keyframes dashed_border_running": {
+              "100%": {
+                "stroke-dashoffset": "-1000"
+              }
+            },
+            ".svg1": {
+              "padding": "1.5rem",
+              "z-index": "-1",
+              "rect": {
+                "position": "absolute",
+                "width": "~\"calc(100% - 4px)\"",
+                "height": "~\"calc(100% - 4px)\""
+              }
+            }
+          },
+          "_name": "features1",
+          "_sourceTheme": "kids-m4",
+          "_customHTML": "<section class=\"features1 kidsm4_features1\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header>Size</header>\n\t\t<input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"4\">\n\t\t<input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"4\">\n\t\t<select title=\"Cards\" name=\"cardsAmount\">\n\t\t\t<option value=\"1\">1</option>\n\t\t\t<option value=\"2\">2</option>\n\t\t\t<option value=\"3\" selected=\"\">3</option>\n\t\t</select>\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked=\"\">\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\" checked=\"\">\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked=\"\">\n\t\t<header>Cadrs Background</header>\n\t\t<input type=\"color\" title=\"Card 1\" value=\"#fa9db7\" name=\"CardBg1\">\n\t\t<input type=\"color\" title=\"Card 2\" value=\"#45b3df\" name=\"CardBg2\">\n\t\t<input type=\"color\" title=\"Card 3\" value=\"#ffc85b\" name=\"CardBg3\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax=\"\">\n\t\t\t<input type=\"image\" title=\"Image\" value=\"../_images/children.jpg\" parallax=\"\">\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected=\"\">\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/201169087\n            \">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked=\"\" condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n\t\t<input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n\n\t<div class=\"container-fluid\">\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"card card-1 col-12 col-md-8\" mbr-class=\"{'col-lg-6': cardsAmount == '2',\n            'col-lg-4': cardsAmount == '3'}\">\n\t\t\t\t<div class=\"card-inner card-inner1\">\n\t\t\t\t\t<div class=\"card-img pb-4\">\n\t\t\t\t\t\t<div class=\"item-image\">\n\t\t\t\t\t\t\t<img src=\"../_images/amimals/animals3.png\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"card-box text-white\">\n\t\t\t\t\t\t<h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-img\">\n\t\t\t\t\t\t\tPlayground\n\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit.\n\t\t\t\t\t\t</p>\n\t\t\t\t\t\t<div mbr-buttons=\"\" mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnRemove,-mbrBtnAdd\">\n\t\t\t\t\t\t\t<a class=\"btn-underline text-white\" href=\"#\" data-app-placeholder=\"Type Text\">Read More<span class=\"icon-btn mbri-star mbr-iconfont mbr-iconfont-btn\"></span></a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<svg class=\"svg1 wgl-dashes inner-dashed-border animated-dashes\" fill=\"transparent\" stroke-width=\"2\" stroke-dasharray=\"9 5\" stroke-dashoffset=\"0\" stroke-linecap=\"round\" width=\"100%\" height=\"100%\">\n\t\t\t\t\t\t<rect x=\"2px\" y=\"2px\" rx=\"30px\" ry=\"30px\"></rect>\n\t\t\t\t\t</svg>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"card card-2 col-12 col-md-8\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-6': cardsAmount == '2',\n                             'col-lg-4': cardsAmount == '3'}\">\n\t\t\t\t<div class=\"card-inner card-inner2\">\n\t\t\t\t\t<div class=\"card-img pb-4\">\n\t\t\t\t\t\t<div class=\"item-image\">\n\t\t\t\t\t\t\t<img src=\"../_images/amimals/animals2.png\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"card-box text-white\">\n\t\t\t\t\t\t<h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-img\">\n\t\t\t\t\t\t\tEntertainment\n\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit.\n\t\t\t\t\t\t</p>\n\t\t\t\t\t\t<div mbr-buttons=\"\" mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnRemove,-mbrBtnAdd\">\n\t\t\t\t\t\t\t<a class=\"btn-underline text-white\" href=\"#\" data-app-placeholder=\"Type Text\">Read More<span class=\"icon-btn mbri-star mbr-iconfont mbr-iconfont-btn\"></span></a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<svg class=\"svg1 wgl-dashes inner-dashed-border animated-dashes\" fill=\"transparent\" stroke-width=\"2\" stroke-dasharray=\"9 5\" stroke-dashoffset=\"0\" stroke-linecap=\"round\">\n\t\t\t\t\t\t<rect width=\"100%\" height=\"100%\" x=\"2px\" y=\"2px\" rx=\"30px\" ry=\"30px\"></rect>\n\t\t\t\t\t</svg>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"card card-3 col-12 col-md-8\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-6': cardsAmount == '2',\n                             'col-lg-4': cardsAmount == '3'}\">\n\t\t\t\t<div class=\"card-inner card-inner3\">\n\t\t\t\t\t<div class=\"card-img pb-4\">\n\t\t\t\t\t\t<div class=\"item-image\">\n\t\t\t\t\t\t\t<img src=\"../_images/amimals/animals1.png\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"card-box text-white\">\n\t\t\t\t\t\t<h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-img\">\n\t\t\t\t\t\t\tEnvironment\n\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit.\n\t\t\t\t\t\t</p>\n\t\t\t\t\t\t<div mbr-buttons=\"\" mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnRemove,-mbrBtnAdd\">\n\t\t\t\t\t\t\t<a class=\"btn-underline text-white\" href=\"#\" data-app-placeholder=\"Type Text\">Read More<span class=\"icon-btn mbri-star mbr-iconfont mbr-iconfont-btn\"></span></a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<svg fill=\"transparent\" stroke-width=\"2\" stroke-dasharray=\"9 5\" stroke-dashoffset=\"0\" stroke-linecap=\"round\" class=\"svg1 wgl-dashes inner-dashed-border animated-dashes\">\n\t\t\t\t\t\t<rect x=\"2px\" y=\"2px\" rx=\"30px\" ry=\"30px\" width=\"100%\" height=\"100%\"></rect>\n\t\t\t\t\t</svg>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "tyWSMxDoft",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "features1-4"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".title__block": {
+              "margin-bottom": "1.5rem"
+            },
+            ".text-top": {
+              "color": "#767676",
+              "margin-top": "2rem"
+            },
+            ".card": {
+              "display": "flex",
+              "flex-direction": "row",
+              "margin-bottom": "1rem",
+              "&:hover .card-title": {
+                "color": "@warningColor"
+              }
+            },
+            ".card-title": {
+              "color": "#12265a",
+              "transition": "0.4s"
+            },
+            ".item-image": {
+              "margin-right": "1rem",
+              "img": {
+                "width": "80px"
+              }
+            },
+            ".container-fluid": {
+              "padding": "0 1.5rem",
+              "max-width": "1200px"
+            },
+            "@media (max-width: 767px)": {
+              "padding-top": "(@paddingTop * 5px)",
+              "padding-bottom": "(@paddingBottom * 5px)",
+              ".container-fluid": {
+                "padding": "0 1rem"
+              },
+              ".card": {
+                "flex-direction": "column",
+                "text-align": "center"
+              },
+              ".card-title": {
+                "margin-top": "2rem"
+              },
+              ".item-image": {
+                "margin-right": "0"
+              }
+            }
+          },
+          "_name": "features2",
+          "_sourceTheme": "kids-m4",
+          "_customHTML": "<section class=\"features2 kidsm4_features2\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header>Size</header>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"5\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"5\">\n\t\t<select title=\"Cards\" name=\"cardsAmount\">\n\t\t\t<option value=\"1\">1</option>\n\t\t\t<option value=\"2\">2</option>\n\t\t\t<option value=\"3\">3</option>\n\t\t\t<option value=\"4\">4</option>\n\t\t\t<option value=\"5\">5</option>\n\t\t\t<option value=\"6\" selected>6</option>\n\t\t</select>\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Card Title\" name=\"cardTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Card Text\" name=\"showText\" checked>\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"../_images/children.jpg\" parallax>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/201169087\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n\n\t<div class=\"container-fluid\">\n\t\t<div class=\"row\" mbr-if=\"showTitle || showSubtitle\">\n\t\t\t<div class=\"col-md-12 title__block align-center\">\n\t\t\t\t<h2 class=\"mbr-section-title mbr-fonts-style line-bg-warning\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".row .title__block, .mbr-section-title\">\n\t\t\t\t\tSchool Educational\n\t\t\t\t</h2>\n\t\t\t\t<p class=\"text-top mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".text-top\">\n\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elitdo eiusmod. Lorem ipsum dolor sit <br>\n\t\t\t\t\tamet, consectetur adipiscing elitdo eiusmod\n\t\t\t\t</p>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-lg-4': cardsAmount > '2'}\">\n\t\t\t\t<div class=\"item-image\">\n\t\t\t\t\t<img src=\"../_images/elephants/elephant4.png\">\n\t\t\t\t</div>\n\t\t\t\t<div class=\"card-box\">\n\t\t\t\t\t<h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"cardTitle\" data-app-selector=\".card-title\">\n\t\t\t\t\t\tArt Classes\n\t\t\t\t\t</h4>\n\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elitdo\n\t\t\t\t\t</p>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-4': cardsAmount > '2'}\">\n\t\t\t\t<div class=\"item-image\">\n\t\t\t\t\t<img src=\"../_images/elephants/elephant1.png\">\n\t\t\t\t</div>\n\t\t\t\t<div class=\"card-box\">\n\t\t\t\t\t<h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"cardTitle\" data-app-selector=\".card-title\">\n\t\t\t\t\t\tEducation\n\t\t\t\t\t</h4>\n\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elitdo\n\t\t\t\t\t</p>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-4': cardsAmount > '2'}\">\n\t\t\t\t<div class=\"item-image\">\n\t\t\t\t\t<img src=\"../_images/elephants/elephant3.png\">\n\t\t\t\t</div>\n\t\t\t\t<div class=\"card-box\">\n\t\t\t\t\t<h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"cardTitle\" data-app-selector=\".card-title\">\n\t\t\t\t\t\tActivity Rooms\n\t\t\t\t\t</h4>\n\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elitdo\n\t\t\t\t\t</p>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 3\" mbr-class=\"{'col-lg-4': cardsAmount > '3'}\">\n\t\t\t\t<div class=\"item-image\">\n\t\t\t\t\t<img src=\"../_images/elephants/elephant1.png\">\n\t\t\t\t</div>\n\t\t\t\t<div class=\"card-box\">\n\t\t\t\t\t<h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"cardTitle\" data-app-selector=\".card-title\">\n\t\t\t\t\t\tLanguages\n\t\t\t\t\t</h4>\n\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elitdo\n\t\t\t\t\t</p>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 4\" mbr-class=\"{'col-lg-4': cardsAmount > '3'}\">\n\t\t\t\t<div class=\"item-image\">\n\t\t\t\t\t<img src=\"../_images/elephants/elephant4.png\">\n\t\t\t\t</div>\n\t\t\t\t<div class=\"card-box\">\n\t\t\t\t\t<h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"cardTitle\" data-app-selector=\".card-title\">\n\t\t\t\t\t\tBirthday Party\n\t\t\t\t\t</h4>\n\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elitdo\n\t\t\t\t\t</p>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 5\" mbr-class=\"{'col-lg-4': cardsAmount > '3'}\">\n\t\t\t\t<div class=\"item-image\">\n\t\t\t\t\t<img src=\"../_images/elephants/elephant5.png\">\n\t\t\t\t</div>\n\t\t\t\t<div class=\"card-box\">\n\t\t\t\t\t<h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"cardTitle\" data-app-selector=\".card-title\">\n\t\t\t\t\t\tHealthy Food\n\t\t\t\t\t</h4>\n\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elitdo\n\t\t\t\t\t</p>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "tyWSOFBXoO",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "features2-5"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-section-subtitle": {
+              "font-weight": "300"
+            },
+            ".card": {
+              "word-wrap": "break-word"
+            },
+            ".mbr-iconfont": {
+              "font-size": "80px",
+              "color": "#149dcc"
+            },
+            ".count1": {
+              "color": "#ffffff",
+              "font-weight": "900"
+            },
+            ".mbr-content-title": {
+              "color": "#ffffff"
+            },
+            ".svg-1": {
+              "position": "absolute",
+              "bottom": "0"
+            },
+            ".svg-1 path": {
+              "fill": "@LineColor"
+            },
+            ".svg-2": {
+              "position": "absolute",
+              "top": "0"
+            },
+            ".svg-2 path": {
+              "fill": "@LineColor"
+            },
+            ".container-fluid": {
+              "max-width": "1200px"
+            },
+            "@media (max-width: 767px)": {
+              "padding-top": "(@paddingTop * 5px)",
+              "padding-bottom": "(@paddingBottom * 5px)"
+            },
+            "@media (min-width: 767px)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            }
+          },
+          "_name": "counters1",
+          "_sourceTheme": "kids-m4",
+          "_customHTML": "<section class=\"counters1 kidsm4_counters1 counters\" group=\"Counters\" plugins=\"ViewportChecker\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header>Size</header>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"10\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"10\">\n\t\t<select title=\"Cards Count\" name=\"cardsAmount\">\n\t\t\t<option value=\"1\">1</option>\n\t\t\t<option value=\"2\">2</option>\n\t\t\t<option value=\"3\">3</option>\n\t\t\t<option value=\"4\" selected>4</option>\n\t\t</select>\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n\t\t<input type=\"checkbox\" title=\"Icons\" name=\"showIcons\">\n\t\t<input type=\"checkbox\" title=\"Card Title\" name=\"showTitles\" checked>\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"../_images/children.jpg\">\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#88d4f2\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/201169087\">\n\t\t</fieldset>\n\t\t<input type=\"color\" title=\"Line\" name=\"LineColor\" value=\"#ffffff\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n\n\t<svg class=\"svg-2\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1428 94.61\">\n\t\t<g id=\"Layer_3\" data-name=\"Layer 3\">\n\t\t\t<path class=\"cls-1\" d=\"M-83,10\" transform=\"translate(83 33)\"></path>\n\t\t\t<path class=\"cls-2\" d=\"M986.33,46.5s132.5-37,318,0C1304.33,46.5,1200.83,80.5,986.33,46.5Z\" transform=\"translate(83 33)\"></path>\n\t\t</g>\n\t\t<g id=\"Layer_4\" data-name=\"Layer 4\">\n\t\t\t<path class=\"cls-2\" d=\"M-83,10S127,65.11,394,30.06,986.33,46.5,986.33,46.5,1218,83,1345,38V-33H-83Z\" transform=\"translate(83 33)\"></path>\n\t\t</g>\n\t</svg>\n\n\t<div class=\"container-fluid align-center\">\n\t\t<h2 class=\"mbr-section-title pb-4 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n\t\t\tCounters\n\t\t</h2>\n\t\t<h3 class=\"mbr-section-subtitle pb-5 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n\t\t\tMobirise is a beautiful site constructor\n\t\t</h3>\n\t\t<div class=\"container\">\n\t\t\t<div class=\"media-container-row\">\n\t\t\t\t<div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4','col-lg-4': cardsAmount == '3'}\">\n\t\t\t\t\t<div class=\"panel-item\" mbr-class=\"{'p-3':!transparentBg}\">\n\t\t\t\t\t\t<div class=\"card-img pb-3\" mbr-if=\"showIcons\">\n\t\t\t\t\t\t\t<span mbr-icon class=\"mbri-mobirise mbr-iconfont\"></span>\n\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t<div class=\"card-text\">\n\t\t\t\t\t\t\t<h3 class=\"count count1 pt-3 mbr-regular mbr-fonts-style\" mbr-theme-style=\"display-2\" data-app-selector=\".card-img, .count\">\n\t\t\t\t\t\t\t\t284\n\t\t\t\t\t\t\t</h3>\n\t\t\t\t\t\t\t<h4 class=\"mbr-content-title mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitles\" data-app-selector=\".mbr-content-title\">\n\t\t\t\t\t\t\t\tMonths\n\t\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t\t<p class=\"mbr-content-text pt-2 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-content-text\">\n\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet, conse ctetuer adipiscing elit.\n\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount>1\" mbr-class=\"{'col-lg-3': cardsAmount == '4','col-lg-4': cardsAmount == '3'}\">\n\t\t\t\t\t<div class=\"panel-item\" mbr-class=\"{'p-3':!transparentBg}\">\n\t\t\t\t\t\t<div class=\"card-img pb-3\" mbr-if=\"showIcons\">\n\t\t\t\t\t\t\t<span mbr-icon class=\"mbri-touch-swipe mbr-iconfont\"></span>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"card-text\">\n\t\t\t\t\t\t\t<h3 class=\"count count1 pt-3 mbr-regular mbr-fonts-style\" mbr-theme-style=\"display-2\" data-app-selector=\".card-img, .count\">\n\t\t\t\t\t\t\t\t163\n\t\t\t\t\t\t\t</h3>\n\t\t\t\t\t\t\t<h4 class=\"mbr-content-title mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitles\" data-app-selector=\".mbr-content-title\">\n\t\t\t\t\t\t\t\tIdeas\n\t\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t\t<p class=\"mbr-content-text pt-2 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-content-text\">\n\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet, conse ctetuer adipiscing elit.\n\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\n\t\t\t\t<div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount>2\" mbr-class=\"{'col-lg-3': cardsAmount == '4','col-lg-4': cardsAmount == '3'}\">\n\t\t\t\t\t<div class=\"panel-item\" mbr-class=\"{'p-3':!transparentBg}\">\n\t\t\t\t\t\t<div class=\"card-img pb-3\" mbr-if=\"showIcons\">\n\t\t\t\t\t\t\t<span mbr-icon class=\"mbri-responsive mbr-iconfont\"></span>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"card-text\">\n\t\t\t\t\t\t\t<h3 class=\"count count1 pt-3 mbr-regular mbr-fonts-style\" mbr-theme-style=\"display-2\" data-app-selector=\".card-img, .count\">\n\t\t\t\t\t\t\t\t853\n\t\t\t\t\t\t\t</h3>\n\t\t\t\t\t\t\t<h4 class=\"mbr-content-title mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitles\" data-app-selector=\".mbr-content-title\">\n\t\t\t\t\t\t\t\tDesigns\n\t\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t\t<p class=\"mbr-content-text pt-2 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-content-text\">\n\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet, conse ctetuer adipiscing elit.\n\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\n\t\t\t\t<div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount>3\" mbr-class=\"{'col-lg-3': cardsAmount == '4','col-lg-4': cardsAmount == '3'}\">\n\t\t\t\t\t<div class=\"panel-item\" mbr-class=\"{'p-3':!transparentBg}\">\n\t\t\t\t\t\t<div class=\"card-img pb-3\" mbr-if=\"showIcons\">\n\t\t\t\t\t\t\t<span mbr-icon class=\"mbri-hot-cup mbr-iconfont\"></span>\n\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t<div class=\"card-texts\">\n\t\t\t\t\t\t\t<h3 class=\"count count1 pt-3 mbr-regular mbr-fonts-style\" mbr-theme-style=\"display-2\" data-app-selector=\".card-img, .count\">\n\t\t\t\t\t\t\t\t734\n\t\t\t\t\t\t\t</h3>\n\t\t\t\t\t\t\t<h4 class=\"mbr-content-title mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitles\" data-app-selector=\".mbr-content-title\">\n\t\t\t\t\t\t\t\tCodes\n\t\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t\t<p class=\"mbr-content-text pt-2 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-content-text\">\n\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet, conse ctetuer adipiscing elit.\n\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<svg class=\"svg-1\" id=\"curve\" data-name=\"Layer 2\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1428 130.87\">\n\t\t<path class=\"cls-1\" d=\"M-83,345V288s158-27,262-22l104,5,138,8,300,21s245,4,281-5c0,0-9-39,33-45,0,0,8-51,58-25,0,0,48-36,61,23,0,0,27,2,28,24,0,0,163-22,163-17v90Z\" transform=\"translate(83 -214.13)\"></path>\n\t</svg>\n</section>",
+          "_cid": "tyWSRlxtra",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "counters1-6"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            "overflow": "hidden",
+            "box-sizing": "border-box",
+            ".mbr-slider .carousel-control": {
+              "background": "#1b1b1b"
+            },
+            ".mbr-slider .carousel-control-prev": {
+              "left": "0",
+              "margin-left": "2.5rem"
+            },
+            ".mbr-slider .carousel-control-next": {
+              "right": "0",
+              "margin-right": "2.5rem"
+            },
+            ".mbr-slider .modal-body .close": {
+              "background": "#1b1b1b"
+            },
+            ".row > .row": {
+              "display": "block"
+            },
+            ".mbr-gallery-item": {
+              "width": "100%"
+            },
+            ".mbr-gallery-item > div::before": {
+              "content": "''",
+              "position": "absolute",
+              "left": "0",
+              "top": "0",
+              "width": "100%",
+              "height": "100%",
+              "background": "@overlayColor",
+              "opacity": "0",
+              "transition": "0.2s opacity ease-in-out",
+              "border-radius": "30px",
+              "& when (@gradOverlay)": {
+                "background": "linear-gradient(to left, @overlayColor, @overlayColor2) !important"
+              }
+            },
+            ".mbr-gallery-item > div": {
+              "position": "relative",
+              "&:hover": {
+                ".mbr-gallery-title::before": {
+                  "background": "transparent !important"
+                },
+                "&:before": {
+                  "opacity": "@overlayOpacity !important"
+                }
+              },
+              "transition": "0.5s",
+              "margin": "0.3rem",
+              "border-radius": "30px",
+              "overflow": "hidden"
+            },
+            ".mbr-gallery-title": {
+              "font-size": ".9em",
+              "position": "absolute",
+              "display": "block",
+              "width": "100%",
+              "bottom": "0",
+              "padding": "1rem",
+              "color": "#ffffff",
+              "z-index": "2",
+              "&:before": {
+                "content": "\" \"",
+                "width": "100%",
+                "height": "100%",
+                "top": "0",
+                "left": "0",
+                "z-index": "-1",
+                "position": "absolute",
+                "background": "@overlayColor !important",
+                "opacity": "@overlayOpacity",
+                "transition": "0.2s background ease-in-out",
+                "border-radius": "0 0 30px 30px",
+                "& when (@gradOverlay)": {
+                  "background": "linear-gradient(to left, @overlayColor, @overlayColor2) !important"
+                }
+              }
+            },
+            ".container": {
+              "max-width": "1200px",
+              "padding": "0.7rem"
+            },
+            ".mbr-gallery-item > div:hover": {
+              "transform": "translate(1rem, 1rem)"
+            },
+            "@media (max-width: 767px)": {
+              "padding-top": "(@paddingTop * 5px)",
+              "padding-bottom": "(@paddingBottom * 5px)",
+              ".col-sm-12": {
+                "padding": "0 !important"
+              }
+            }
+          },
+          "_name": "gallery1",
+          "_sourceTheme": "kids-m4",
+          "_customHTML": "<section class=\"mbr-gallery mbr-slider-carousel gallery1 kidsm4_gallery1\" group=\"Sliders &amp; Gallery\" plugins=\"Masonry,BootstrapCarouselSwipe,Gallery,VimeoPlayer,SliderVideo\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"2\" inline=\"\">\n\t\t<input type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"2\" inline=\"\">\n\t\t<header>Color</header>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#fa9db7\">\n\t\t<input type=\"checkbox\" title=\"Gradient Overlay\" name=\"gradOverlay\">\n\t\t<input type=\"color\" title=\"Overlay Color 2\" name=\"overlayColor2\" value=\"#45505b\" condition=\"gradOverlay\">\n\t\t<input type=\"range\" title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" inline=\"\">\n\t\t<input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n\n\t\t<header>Gallery</header>\n\t\t<input type=\"gallery\" subtype=\"flex\" title=\"Gallery\" name=\"gallery\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div mbr-class=\"{'container': !fullWidth}\">\n\t\t<div mbr-gallery=\"gallery\" mbr-gallery-spacing=\"3\" mbr-gallery-count=\"2\" mbr-gallery-first-count=\"3\" mbr-gallery-second-count=\"3\" mbr-gallery-third-count=\"2\" mbr-gallery-fourth-count=\"2\"></div>\n\t</div>\n</section>",
+          "_cid": "tyWSTFvuKn",
+          "_protectedParams": [
+            "gallery"
+          ],
+          "_global": false,
+          "_once": false,
+          "_params": {
+            "gallery": [
+              {
+                "tags": "Потрясающие",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/gallery00.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/gallery00.jpg",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Введите заголовок здесь",
+                "active": true
+              },
+              {
+                "tags": "Отзывчивый",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/gallery01.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/gallery01.jpg",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Введите заголовок здесь",
+                "active": false
+              },
+              {
+                "tags": "Творческий",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/gallery02.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/gallery02.jpg",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Введите заголовок здесь",
+                "active": false
+              },
+              {
+                "tags": "Анимированный",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/gallery03.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/gallery03.jpg",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Введите заголовок здесь",
+                "active": false
+              },
+              {
+                "tags": "Потрясающие",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/gallery04.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/gallery04.jpg",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Введите заголовок здесь",
+                "active": false
+              },
+              {
+                "tags": "Потрясающие",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/gallery05.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/gallery05.jpg",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Введите заголовок здесь",
+                "active": false
+              },
+              {
+                "tags": "Отзывчивый",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/gallery06.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/gallery06.jpg",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Введите заголовок здесь",
+                "active": false
+              },
+              {
+                "tags": "Анимированный",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/gallery07.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/gallery07.jpg",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Введите заголовок здесь",
+                "active": false
+              }
+            ]
+          },
+          "_anchor": "gallery1-7"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value",
+              "& when (@gradientBg)": {
+                "background": "linear-gradient(0deg, @bg-value, @color2)"
+              }
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#70747f"
+            },
+            ".mbr-text": {
+              "color": "#70747f"
+            },
+            ".nav-tabs": {
+              "margin-bottom": "1rem",
+              "padding": "3px",
+              "display": "table",
+              "border-bottom": "none",
+              ".nav-item": {
+                "display": "table-cell"
+              }
+            },
+            ".card-img img": {
+              "width": "100%",
+              "border-radius": "30px"
+            },
+            ".tab-content": {
+              "background-color": "@ColorBG",
+              "border-radius": "30px"
+            },
+            ".nav-tabs .nav-link": {
+              "display": "flex",
+              "color": "@infoColor",
+              "box-sizing": "border-box",
+              "font-style": "normal",
+              "background": "@tabColor",
+              "font-weight": "900",
+              "border": "2px dashed @activeTabColor1",
+              "border-radius": "25px !important",
+              "transition": "all .3s",
+              "text-align": "center",
+              "flex-direction": "column",
+              "&:hover": {
+                "background-color": "transparent",
+                "color": "@warningColor"
+              },
+              "&.active": {
+                "color": "contrast(@warningColor, darken(@warningColor, 50%), #ffffff, 60%)",
+                "background": "@activeTabColor1"
+              }
+            },
+            ".icon-img": {
+              "display": "inline-block",
+              "vertical-align": "middle",
+              "width": "40px",
+              "height": "40px"
+            },
+            ".wrapper": {
+              "margin-bottom": "1.5rem"
+            },
+            ".card-title": {
+              "color": "#12265a",
+              "display": "inline-block",
+              "vertical-align": "bottom",
+              "margin-left": "1rem",
+              "margin-bottom": "0"
+            },
+            ".container-fluid": {
+              "max-width": "1200px"
+            },
+            ".row": {
+              "align-items": "center"
+            },
+            ".title-content": {
+              "color": "#12265a"
+            },
+            ".name": {
+              "margin-top": "1rem"
+            },
+            "@media (min-width: 992px)": {
+              ".nav-tabs": {
+                "margin-right": "auto",
+                "margin-left": "auto"
+              },
+              ".nav-tabs .nav-link": {
+                "margin": "0 1rem",
+                "padding": "1.5rem 2.5rem"
+              },
+              ".tab-content": {
+                "padding": "3.5rem"
+              },
+              ".left-column": {
+                "padding-right": "4rem"
+              },
+              ".right-column": {
+                "padding-left": "4rem"
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".tab-content": {
+                "padding": "1rem"
+              },
+              ".nav-item": {
+                "padding": "0.5rem"
+              },
+              ".card-img": {
+                "margin-top": "0.6rem"
+              },
+              ".card-img2": {
+                "margin-bottom": "1.5rem"
+              }
+            },
+            "@media (max-width: 767px)": {
+              "padding-top": "(@paddingTop * 5px)",
+              "padding-bottom": "(@paddingBottom * 5px)",
+              ".nav-tabs": {
+                "padding": "0",
+                "display": "flex",
+                "justify-content": "space-between"
+              },
+              ".nav-item": {
+                "padding": "0"
+              },
+              ".last-navitem": {
+                "width": "100%"
+              },
+              "li": {
+                "width": "140px"
+              },
+              ".container-fluid": {
+                "padding": "0"
+              },
+              ".nav-link": {
+                "margin-bottom": "1rem !important"
+              },
+              ".mbr-iconfont": {
+                "margin-top": "0.4rem"
+              }
+            }
+          },
+          "_name": "tabs3",
+          "_sourceTheme": "kids-m4",
+          "_customHTML": "<section class=\"tabs3 kidsm4_tabs3 tabs\" group=\"Accordion & Toggles & Tabs\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background':bg.parallax}\" plugins=\"mbr-tabs\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header>Size</header>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"6\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"5\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n\t\t<header>Tab</header>\n\t\t<select title=\"Tabs Count\" name=\"bootstrapTabs\">\n\t\t\t<option value=\"1\">1</option>\n\t\t\t<option value=\"2\">2</option>\n\t\t\t<option value=\"3\">3</option>\n\t\t\t<option value=\"4\">4</option>\n\t\t\t<option value=\"5\" selected>5</option>\n\t\t</select>\n\t\t<input type=\"color\" title=\"Tab Color\" name=\"tabColor\" value=\"#f4f8fa\">\n\t\t<input type=\"color\" title=\"Active Tab Color\" name=\"activeTabColor1\" value=\"#fa9db7\">\n\t\t<input type=\"color\" title=\"Background\" name=\"ColorBG\" value=\"#ffffff\">\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitleTab\" checked>\n\t\t<input type=\"checkbox\" title=\"Image\" name=\"showImages\" checked>\n\t\t<select title=\"Items Count\" name=\"itemsCount\">\n\t\t\t<option value=\"1\">1</option>\n\t\t\t<option value=\"2\">2</option>\n\t\t\t<option value=\"3\">3</option>\n\t\t\t<option value=\"4\" selected>4</option>\n\t\t\t<option value=\"5\">5</option>\n\t\t\t<option value=\"6\">6</option>\n\t\t</select>\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"../_images/children.jpg\" parallax>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/201169087\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Gradient\" name=\"gradientBg\" condition=\"bg.type=='color'\" checked>\n\t\t<input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#ffffff\" condition=\"gradientBg && bg.type == 'color'\">\n\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n\n\t<div class=\"container-fluid\">\n\t\t<h2 class=\"mbr-section-title align-center mbr-fonts-style pb-3\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n\t\t\tHorizontal tabs with images\n\t\t</h2>\n\t\t<h3 class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style pb-3\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit.\n\t\t</h3>\n\t\t<div class=\"media-container-row\">\n\t\t\t<div class=\"col-12\">\n\t\t\t\t<ul class=\"nav nav-tabs\" role=\"tablist\" data-app-placeholder=\"Type Title\">\n\t\t\t\t\t<li mbr-buttons mbr-theme-style=\"display-5\" class=\"nav-item\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrLink,-mbrBtnRemove\">\n\t\t\t\t\t\t<a class=\"nav-link mbr-fonts-style show active\" role=\"tab\" data-toggle=\"tab\" href=\"#tabs3-5i_tab0\" data-app-placeholder=\"Type Text\" aria-selected=\"true\">\n\t\t\t\t\t\t\t<span class=\"mbrib-star mbr-iconfont mbr-iconfont-btn\"></span>\n\t\t\t\t\t\t\t<span class=\"name\">Activity</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li mbr-buttons mbr-theme-style=\"display-5\" class=\"nav-item\" mbr-if=\"bootstrapTabs > 2\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrLink,-mbrBtnRemove\">\n\t\t\t\t\t\t<a class=\"nav-link mbr-fonts-style show active\" role=\"tab\" data-toggle=\"tab\" href=\"#tabs3-5i_tab1\" data-app-placeholder=\"Type Text\" aria-selected=\"true\">\n\t\t\t\t\t\t\t<span class=\"mbrib-star mbr-iconfont mbr-iconfont-btn\"></span>\n\t\t\t\t\t\t\t<span class=\"name\">Music</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li mbr-buttons mbr-theme-style=\"display-5\" class=\"nav-item\" mbr-if=\"bootstrapTabs > 2\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrLink,-mbrBtnRemove\"><a class=\"nav-link mbr-fonts-style show active\" role=\"tab\" data-toggle=\"tab\" href=\"#tabs3-8_tab2\" data-app-placeholder=\"Введите Текст\" aria-selected=\"true\">\n\t\t\t\t\t\t\t<span class=\"mbrib-star mbr-iconfont mbr-iconfont-btn\"></span>\n\t\t\t\t\t\t\t<span class=\"name\">Party</span>\n\t\t\t\t\t\t</a></li>\n\t\t\t\t\t<li mbr-buttons mbr-theme-style=\"display-5\" class=\"nav-item\" mbr-if=\"bootstrapTabs > 3\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrLink,-mbrBtnRemove\"><a class=\"nav-link mbr-fonts-style show active\" role=\"tab\" data-toggle=\"tab\" href=\"#tabs3-8_tab3\" data-app-placeholder=\"Введите Текст\" aria-selected=\"true\">\n\t\t\t\t\t\t\t<span class=\"mbrib-star mbr-iconfont mbr-iconfont-btn\"></span>\n\t\t\t\t\t\t\t<span class=\"name\">Yoga</span>\n\t\t\t\t\t\t</a></li>\n\t\t\t\t\t<li mbr-buttons mbr-theme-style=\"display-5\" class=\"nav-item last-navitem\" mbr-if=\"bootstrapTabs > 4\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrLink,-mbrBtnRemove\">\n\t\t\t\t\t\t<a class=\"nav-link mbr-fonts-style active show\" role=\"tab\" data-toggle=\"tab\" href=\"#tabs3-au_tab4\" data-app-placeholder=\"Type Text\" aria-selected=\"true\">\n\t\t\t\t\t\t\t<span mbr-icon class=\"mbrib-star mbr-iconfont mbr-iconfont-btn\"></span>\n\t\t\t\t\t\t\t<span class=\"name\">Holidays</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n\t\t\t\t</ul>\n\t\t\t\t<div class=\"tab-content\">\n\t\t\t\t\t<div id=\"tab1\" class=\"tab-pane in active\" role=\"tabpanel\">\n\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t<div mbr-class=\"{'col-lg-6':showImages,'col-md-12':!showImages}\" class=\"left-column\">\n\t\t\t\t\t\t\t\t<h4 class=\"display-2 title-content pb-2 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitleTab\" data-app-selector=\".title-content\">\n\t\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet\n\t\t\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n\t\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Autem laudantium in\n\t\t\t\t\t\t\t\t\tadipisci ipsa optio quas id\n\t\t\t\t\t\t\t\t\texcepturi non, eos cupiditate\n\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t<div mbr-list mbr-list-grow=\"itemsCount\">\n\t\t\t\t\t\t\t\t\t<div class=\"wrapper\">\n\t\t\t\t\t\t\t\t\t\t<img class=\"icon-img\" src=\"../_images/elephants/elephant3.png\">\n\t\t\t\t\t\t\t\t\t\t<h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if data-app-selector=\".card-title, .wrapper\">\n\t\t\t\t\t\t\t\t\t\t\tOutdoor Activity\n\t\t\t\t\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"wrapper\">\n\t\t\t\t\t\t\t\t\t\t<img class=\"icon-img\" src=\"../_images/elephants/elephant1.png\">\n\t\t\t\t\t\t\t\t\t\t<h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if data-app-selector=\".card-title, .wrapper\">\n\t\t\t\t\t\t\t\t\t\t\tDrawing Course\n\t\t\t\t\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"wrapper\">\n\t\t\t\t\t\t\t\t\t\t<img class=\"icon-img\" src=\"../_images/elephants/elephant4.png\">\n\t\t\t\t\t\t\t\t\t\t<h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if data-app-selector=\".card-title, .wrapper\">\n\t\t\t\t\t\t\t\t\t\t\tPlayground\n\t\t\t\t\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"wrapper\">\n\t\t\t\t\t\t\t\t\t\t<img class=\"icon-img\" src=\"../_images/elephants/elephant1.png\">\n\t\t\t\t\t\t\t\t\t\t<h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if data-app-selector=\".card-title, .wrapper\">\n\t\t\t\t\t\t\t\t\t\t\tDrawing Course\n\t\t\t\t\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"col-lg-6\" mbr-if=\"showImages\">\n\t\t\t\t\t\t\t\t<div class=\"card-img\"><img class=\"right-img\" src=\"../_images/gallery/gallery05.jpg\" alt></div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div id=\"tab2\" class=\"tab-pane\" role=\"tabpanel\">\n\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t<div class=\"col-lg-6\" mbr-if=\"showImages\">\n\t\t\t\t\t\t\t\t<div class=\"card-img card-img2\"><img class=\"right-img\" src=\"../_images/gallery/gallery02.jpg\" alt></div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div mbr-class=\"{'col-lg-6':showImages,'col-md-12':!showImages}\" class=\"right-column\">\n\t\t\t\t\t\t\t\t<h4 class=\"display-2 title-content pb-2 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitleTab\" data-app-selector=\".title-content\">\n\t\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet\n\t\t\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n\t\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Autem laudantium in\n\t\t\t\t\t\t\t\t\tadipisci ipsa optio quas id\n\t\t\t\t\t\t\t\t\texcepturi non, eos cupiditate\n\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t<div mbr-list mbr-list-grow=\"itemsCount\">\n\t\t\t\t\t\t\t\t\t<div class=\"wrapper\">\n\t\t\t\t\t\t\t\t\t\t<img class=\"icon-img\" src=\"../_images/elephants/elephant3.png\">\n\t\t\t\t\t\t\t\t\t\t<h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if data-app-selector=\".card-title, .wrapper\">\n\t\t\t\t\t\t\t\t\t\t\tOutdoor Activity\n\t\t\t\t\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"wrapper\">\n\t\t\t\t\t\t\t\t\t\t<img class=\"icon-img\" src=\"../_images/elephants/elephant1.png\">\n\t\t\t\t\t\t\t\t\t\t<h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if data-app-selector=\".card-title, .wrapper\">\n\t\t\t\t\t\t\t\t\t\t\tDrawing Course\n\t\t\t\t\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"wrapper\">\n\t\t\t\t\t\t\t\t\t\t<img class=\"icon-img\" src=\"../_images/elephants/elephant4.png\">\n\t\t\t\t\t\t\t\t\t\t<h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if data-app-selector=\".card-title, .wrapper\">\n\t\t\t\t\t\t\t\t\t\t\tPlayground\n\t\t\t\t\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"wrapper\">\n\t\t\t\t\t\t\t\t\t\t<img class=\"icon-img\" src=\"../_images/elephants/elephant1.png\">\n\t\t\t\t\t\t\t\t\t\t<h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if data-app-selector=\".card-title, .wrapper\">\n\t\t\t\t\t\t\t\t\t\t\tDrawing Course\n\t\t\t\t\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div id=\"tab3\" class=\"tab-pane\" role=\"tabpanel\">\n\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t<div mbr-class=\"{'col-lg-6':showImages,'col-md-12':!showImages}\" class=\"left-column\">\n\t\t\t\t\t\t\t\t<h4 class=\"display-2 title-content pb-2 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitleTab\" data-app-selector=\".title-content\">\n\t\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet\n\t\t\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n\t\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Autem laudantium in\n\t\t\t\t\t\t\t\t\tadipisci ipsa optio quas id\n\t\t\t\t\t\t\t\t\texcepturi non, eos cupiditate\n\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t<div mbr-list mbr-list-grow=\"itemsCount\">\n\t\t\t\t\t\t\t\t\t<div class=\"wrapper\">\n\t\t\t\t\t\t\t\t\t\t<img class=\"icon-img\" src=\"../_images/elephants/elephant3.png\">\n\t\t\t\t\t\t\t\t\t\t<h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if data-app-selector=\".card-title, .wrapper\">\n\t\t\t\t\t\t\t\t\t\t\tOutdoor Activity\n\t\t\t\t\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"wrapper\">\n\t\t\t\t\t\t\t\t\t\t<img class=\"icon-img\" src=\"../_images/elephants/elephant1.png\">\n\t\t\t\t\t\t\t\t\t\t<h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if data-app-selector=\".card-title, .wrapper\">\n\t\t\t\t\t\t\t\t\t\t\tDrawing Course\n\t\t\t\t\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"wrapper\">\n\t\t\t\t\t\t\t\t\t\t<img class=\"icon-img\" src=\"../_images/elephants/elephant4.png\">\n\t\t\t\t\t\t\t\t\t\t<h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if data-app-selector=\".card-title, .wrapper\">\n\t\t\t\t\t\t\t\t\t\t\tPlayground\n\t\t\t\t\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"wrapper\">\n\t\t\t\t\t\t\t\t\t\t<img class=\"icon-img\" src=\"../_images/elephants/elephant1.png\">\n\t\t\t\t\t\t\t\t\t\t<h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if data-app-selector=\".card-title, .wrapper\">\n\t\t\t\t\t\t\t\t\t\t\tDrawing Course\n\t\t\t\t\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"col-lg-6\" mbr-if=\"showImages\">\n\t\t\t\t\t\t\t\t<div class=\"card-img\"><img class=\"right-img\" src=\"../_images/gallery/gallery06.jpg\" alt></div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div id=\"tab4\" class=\"tab-pane in active\" role=\"tabpanel\">\n\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t<div mbr-class=\"{'col-lg-6':showImages,'col-md-12':!showImages}\" class=\"left-column\">\n\t\t\t\t\t\t\t\t<h4 class=\"display-2 title-content pb-2 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitleTab\" data-app-selector=\".title-content\">\n\t\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet\n\t\t\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n\t\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Autem laudantium in\n\t\t\t\t\t\t\t\t\tadipisci ipsa optio quas id\n\t\t\t\t\t\t\t\t\texcepturi non, eos cupiditate\n\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t<div mbr-list mbr-list-grow=\"itemsCount\">\n\t\t\t\t\t\t\t\t\t<div class=\"wrapper\">\n\t\t\t\t\t\t\t\t\t\t<img class=\"icon-img\" src=\"../_images/elephants/elephant3.png\">\n\t\t\t\t\t\t\t\t\t\t<h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if data-app-selector=\".card-title, .wrapper\">\n\t\t\t\t\t\t\t\t\t\t\tOutdoor Activity\n\t\t\t\t\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"wrapper\">\n\t\t\t\t\t\t\t\t\t\t<img class=\"icon-img\" src=\"../_images/elephants/elephant1.png\">\n\t\t\t\t\t\t\t\t\t\t<h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if data-app-selector=\".card-title, .wrapper\">\n\t\t\t\t\t\t\t\t\t\t\tDrawing Course\n\t\t\t\t\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"wrapper\">\n\t\t\t\t\t\t\t\t\t\t<img class=\"icon-img\" src=\"../_images/elephants/elephant4.png\">\n\t\t\t\t\t\t\t\t\t\t<h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if data-app-selector=\".card-title, .wrapper\">\n\t\t\t\t\t\t\t\t\t\t\tPlayground\n\t\t\t\t\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"wrapper\">\n\t\t\t\t\t\t\t\t\t\t<img class=\"icon-img\" src=\"../_images/elephants/elephant1.png\">\n\t\t\t\t\t\t\t\t\t\t<h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if data-app-selector=\".card-title, .wrapper\">\n\t\t\t\t\t\t\t\t\t\t\tDrawing Course\n\t\t\t\t\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"col-lg-6\" mbr-if=\"showImages\">\n\t\t\t\t\t\t\t\t<div class=\"card-img\"><img class=\"right-img\" src=\"../_images/gallery/gallery05.jpg\" alt></div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div id=\"tab5\" class=\"tab-pane\" role=\"tabpanel\">\n\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t<div mbr-class=\"{'col-lg-6':showImages,'col-md-12':!showImages}\" class=\"left-column\">\n\t\t\t\t\t\t\t\t<h4 class=\"display-2 title-content pb-2 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitleTab\" data-app-selector=\".title-content\">\n\t\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet\n\t\t\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n\t\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Autem laudantium in\n\t\t\t\t\t\t\t\t\tadipisci ipsa optio quas id\n\t\t\t\t\t\t\t\t\texcepturi non, eos cupiditate\n\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t<div mbr-list mbr-list-grow=\"itemsCount\">\n\t\t\t\t\t\t\t\t\t<div class=\"wrapper\">\n\t\t\t\t\t\t\t\t\t\t<img class=\"icon-img\" src=\"../_images/elephants/elephant3.png\">\n\t\t\t\t\t\t\t\t\t\t<h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if data-app-selector=\".card-title, .wrapper\">\n\t\t\t\t\t\t\t\t\t\t\tOutdoor Activity\n\t\t\t\t\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"wrapper\">\n\t\t\t\t\t\t\t\t\t\t<img class=\"icon-img\" src=\"../_images/elephants/elephant1.png\">\n\t\t\t\t\t\t\t\t\t\t<h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if data-app-selector=\".card-title, .wrapper\">\n\t\t\t\t\t\t\t\t\t\t\tDrawing Course\n\t\t\t\t\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"wrapper\">\n\t\t\t\t\t\t\t\t\t\t<img class=\"icon-img\" src=\"../_images/elephants/elephant4.png\">\n\t\t\t\t\t\t\t\t\t\t<h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if data-app-selector=\".card-title, .wrapper\">\n\t\t\t\t\t\t\t\t\t\t\tPlayground\n\t\t\t\t\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"wrapper\">\n\t\t\t\t\t\t\t\t\t\t<img class=\"icon-img\" src=\"../_images/elephants/elephant1.png\">\n\t\t\t\t\t\t\t\t\t\t<h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if data-app-selector=\".card-title, .wrapper\">\n\t\t\t\t\t\t\t\t\t\t\tDrawing Course\n\t\t\t\t\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"col-lg-6\" mbr-if=\"showImages\">\n\t\t\t\t\t\t\t\t<div class=\"card-img\"><img class=\"right-img\" src=\"../_images/gallery/gallery06.jpg\" alt></div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "tyWSYI9fWm",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "tabs3-8"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".container-fluid": {
+              "padding": "0 1.5rem",
+              "max-width": "1200px",
+              "&:before": {
+                "content": "''",
+                "position": "absolute",
+                "z-index": "0",
+                "top": "0",
+                "left": "50%",
+                "width": "4px",
+                "height": "100%",
+                "background": "@warningColor"
+              }
+            },
+            ".row": {
+              "justify-content": "center",
+              "align-items": "center",
+              "margin-bottom": "3.5rem",
+              "&:last-child": {
+                "margin-bottom": "0"
+              }
+            },
+            ".content-row:hover .tlv__pointer::after": {
+              "transform": "scale(1)"
+            },
+            ".content-row-2:hover .tlv__pointer-2::after": {
+              "transform": "scale(1)"
+            },
+            "img": {
+              "width": "100%",
+              "border-radius": "50%"
+            },
+            ".mbr-section-title": {
+              "color": "#45b3df"
+            },
+            ".mbr-section-subtitle": {
+              "margin-bottom": "0"
+            },
+            ".imageContainer": {
+              "display": "flex",
+              "align-items": "center"
+            },
+            ".imageContainer-2": {
+              "display": "flex",
+              "justify-content": "flex-end"
+            },
+            ".img-wrapper, .img-wrapper-2": {
+              "width": "220px",
+              "height": "220px",
+              "position": "relative",
+              "border": "2px solid @warningColor",
+              "border-radius": "50%",
+              "transition": "0.5s"
+            },
+            ".content-row:hover .img-wrapper, .content-row-2:hover .img-wrapper-2": {
+              "padding": "12px",
+              "border-style": "dashed"
+            },
+            ".tlv__pointer, .tlv__pointer-2": {
+              "opacity": "1",
+              "order": "2",
+              "position": "relative",
+              "width": "27px",
+              "height": "27px",
+              "border-radius": "50%",
+              "border": "3px solid @warningColor",
+              "background": "#ffffff",
+              "top": "0px",
+              "left": "-290px"
+            },
+            ".tlv__pointer-2": {
+              "top": "100px",
+              "right": "-30px",
+              "left": "auto"
+            },
+            ".tlv__pointer::before, .tlv__pointer-2::before": {
+              "content": "''",
+              "top": "8px",
+              "width": "47px",
+              "height": "3px",
+              "left": "21px",
+              "position": "absolute",
+              "background": "@warningColor"
+            },
+            ".tlv__pointer-2::before": {
+              "left": "-50px"
+            },
+            ".tlv__pointer::after, .tlv__pointer-2::after": {
+              "width": "11px",
+              "height": "11px",
+              "border-radius": "50%",
+              "transform": "scale(0)",
+              "content": "''",
+              "position": "absolute",
+              "background": "@warningColor",
+              "transition": "0.5s",
+              "left": "5px",
+              "bottom": "5px"
+            },
+            ".tlv__item-first, .tlv__item-first2": {
+              "position": "absolute",
+              "z-index": "1",
+              "top": "-52px",
+              "right": "-11px",
+              "width": "18px",
+              "height": "18px",
+              "background": "@warningColor",
+              "transform": "rotate(45deg)"
+            },
+            ".tlv__item-first2": {
+              "left": "49%",
+              "right": "auto",
+              "top": "auto",
+              "bottom": "-18px"
+            },
+            "@media (max-width: 767px)": {
+              "padding-top": "(@paddingTop * 5px)",
+              "padding-bottom": "(@paddingBottom * 5px)",
+              ".img-wrapper, .img-wrapper-2": {
+                "display": "none"
+              },
+              ".container-fluid": {
+                "padding": "0 1rem"
+              },
+              ".row": {
+                "margin-bottom": "2rem",
+                "&:last-child": {
+                  "margin-bottom": "0"
+                }
+              },
+              ".imageContainer, .imageContainer-2": {
+                "justify-content": "center"
+              },
+              ".right-wrapper, .left-wrapper": {
+                "text-align": "left",
+                "padding-left": "4rem"
+              },
+              ".tlv__pointer::before, .tlv__pointer-2::before": {
+                "content": "none"
+              },
+              ".tlv__pointer": {
+                "position": "absolute",
+                "top": "-100px",
+                "left": "8px"
+              },
+              ".tlv__pointer-2": {
+                "position": "absolute",
+                "top": "50px",
+                "left": "8px"
+              },
+              ".container-fluid::before": {
+                "left": "20px",
+                "width": "4px"
+              },
+              ".tlv__item-first, .tlv__item-first2": {
+                "left": "12px",
+                "top": "-20px"
+              },
+              ".tlv__item-first2": {
+                "left": "13px",
+                "bottom": "-15px",
+                "top": "auto"
+              }
+            },
+            "@media (min-width: 767px)": {
+              ".right-wrapper": {
+                "text-align": "right",
+                "padding-right": "5rem"
+              },
+              ".img-wrapper": {
+                "margin-left": "43px"
+              },
+              ".left-wrapper": {
+                "text-align": "left",
+                "padding-left": "5rem"
+              },
+              ".img-wrapper-2": {
+                "margin-right": "16px"
+              }
+            },
+            "@media (min-width: 1400px)": {
+              ".tlv__item-first2": {
+                "left": "49.4%"
+              }
+            },
+            "@media (min-width: 768px) and (max-width: 1399px)": {
+              ".tlv__item-first2": {
+                "left": "49.3%"
+              }
+            }
+          },
+          "_name": "features11",
+          "_sourceTheme": "kids-m4",
+          "_customHTML": "<section group=\"Features\" class=\"features11 kidsm4_features11\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header>Size</header>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"5\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"5\">\n\t\t<select title=\"Timelines count\" name=\"timelinesAmount\">\n\t\t\t<option value=\"1\">1</option>\n\t\t\t<option value=\"2\">2</option>\n\t\t\t<option value=\"3\">3</option>\n\t\t\t<option value=\"4\" selected>4</option>\n\t\t\t<option value=\"5\">5</option>\n\t\t\t<option value=\"6\">6</option>\n\t\t\t<option value=\"7\">7</option>\n\t\t\t<option value=\"8\">8</option>\n\t\t</select>\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"../_images/children.jpg\" parallax>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/201169087\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n\t<div class=\"container-fluid\">\n\t\t<div class=\"row content-row\" mbr-if=\"timelinesAmount>0\">\n\t\t\t<div class=\"col-lg-6 col-md-6 right-wrapper\">\n\t\t\t\t<div class=\"tlv__item-first\"></div>\n\t\t\t\t<h4 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".content-row .mbr-section-title\">\n\t\t\t\t\t2029\n\t\t\t\t</h4>\n\t\t\t\t<h3 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\" data-app-selector=\".content-row .mbr-section-subtitle\">\n\t\t\t\t\tOutdoor Activity\n\t\t\t\t</h3>\n\t\t\t\t<p class=\"mbr-text mbr-light mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".content-row .mbr-text\">\n\t\t\t\t\tLorem ipsum dolor sit amet, <br>\n\t\t\t\t\tconsectetur adipiscing elit.\n\t\t\t\t</p>\n\t\t\t</div>\n\n\t\t\t<div class=\"col-lg-6 col-md-6 imageContainer\">\n\t\t\t\t<div class=\"tlv__pointer\"></div>\n\t\t\t\t<div class=\"img-wrapper\">\n\t\t\t\t\t<img src=\"../_images/circle-children4.jpg\" alt=\"Mobirise\">\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"row content-row-2\" mbr-if=\"timelinesAmount>1\">\n\t\t\t<div class=\"col-lg-6 col-md-6 imageContainer-2\">\n\t\t\t\t<div class=\"tlv__pointer-2\"></div>\n\t\t\t\t<div class=\"img-wrapper-2\">\n\t\t\t\t\t<img src=\"../_images/gallery/gallery00.jpg\" alt=\"Mobirise\">\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"col-lg-6 col-md-6 left-wrapper\">\n\t\t\t\t<h4 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".content-row-2 .mbr-section-title\">\n\t\t\t\t\t2028\n\t\t\t\t</h4>\n\t\t\t\t<h3 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\" data-app-selector=\".content-row-2 .mbr-section-subtitle\">\n\t\t\t\t\tOutdoor Activity\n\t\t\t\t</h3>\n\t\t\t\t<p class=\"mbr-text mbr-light mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".content-row-2 .mbr-text\">\n\t\t\t\t\tLorem ipsum dolor sit amet, <br>\n\t\t\t\t\tconsectetur adipiscing elit.\n\t\t\t\t</p>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"row content-row\" mbr-if=\"timelinesAmount>2\">\n\t\t\t<div class=\"col-lg-6 col-md-6 right-wrapper right-wrapper\">\n\t\t\t\t<h4 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".content-row .mbr-section-title\">\n\t\t\t\t\t2027\n\t\t\t\t</h4>\n\t\t\t\t<h3 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\" data-app-selector=\".content-row .mbr-section-subtitle\">\n\t\t\t\t\tOutdoor Activity\n\t\t\t\t</h3>\n\t\t\t\t<p class=\"mbr-text mbr-light mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".content-row .mbr-text\">\n\t\t\t\t\tLorem ipsum dolor sit amet, <br>\n\t\t\t\t\tconsectetur adipiscing elit.\n\t\t\t\t</p>\n\t\t\t</div>\n\t\t\t<div class=\"col-lg-6 col-md-6 imageContainer\">\n\t\t\t\t<div class=\"tlv__pointer\"></div>\n\t\t\t\t<div class=\"img-wrapper\">\n\t\t\t\t\t<img src=\"../_images/gallery/gallery01.jpg\" alt=\"Mobirise\">\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"row content-row-2\" mbr-if=\"timelinesAmount>3\">\n\t\t\t<div class=\"col-lg-6 col-md-6 imageContainer-2\">\n\t\t\t\t<div class=\"tlv__pointer-2\"></div>\n\t\t\t\t<div class=\"img-wrapper-2\">\n\t\t\t\t\t<img src=\"../_images/gallery/gallery02.jpg\" alt=\"Mobirise\">\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"col-lg-6 col-md-6 left-wrapper\">\n\t\t\t\t<h4 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".content-row-2 .mbr-section-title\">\n\t\t\t\t\t2026\n\t\t\t\t</h4>\n\t\t\t\t<h3 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\" data-app-selector=\".content-row-2 .mbr-section-subtitle\">\n\t\t\t\t\tOutdoor Activity\n\t\t\t\t</h3>\n\t\t\t\t<p class=\"mbr-text mbr-light mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".content-row-2 .mbr-text\">\n\t\t\t\t\tLorem ipsum dolor sit amet, <br>\n\t\t\t\t\tconsectetur adipiscing elit.\n\t\t\t\t</p>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"row content-row\" mbr-if=\"timelinesAmount>4\">\n\t\t\t<div class=\"col-lg-6 col-md-6 right-wrapper\">\n\t\t\t\t<h4 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".content-row .mbr-section-title\">\n\t\t\t\t\t2025\n\t\t\t\t</h4>\n\t\t\t\t<h3 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\" data-app-selector=\".content-row .mbr-section-subtitle\">\n\t\t\t\t\tOutdoor Activity\n\t\t\t\t</h3>\n\t\t\t\t<p class=\"mbr-text mbr-light mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".content-row .mbr-text\">\n\t\t\t\t\tLorem ipsum dolor sit amet, <br>\n\t\t\t\t\tconsectetur adipiscing elit.\n\t\t\t\t</p>\n\t\t\t</div>\n\n\t\t\t<div class=\"col-lg-6 col-md-6 imageContainer\">\n\t\t\t\t<div class=\"tlv__pointer\"></div>\n\t\t\t\t<div class=\"img-wrapper\">\n\t\t\t\t\t<img src=\"../_images/circle-children4.jpg\" alt=\"Mobirise\">\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"row content-row-2\" mbr-if=\"timelinesAmount>5\">\n\t\t\t<div class=\"col-lg-6 col-md-6 imageContainer-2\">\n\t\t\t\t<div class=\"tlv__pointer-2\"></div>\n\t\t\t\t<div class=\"img-wrapper-2\">\n\t\t\t\t\t<img src=\"../_images/gallery/gallery00.jpg\" alt=\"Mobirise\">\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"col-lg-6 col-md-6 left-wrapper\">\n\t\t\t\t<h4 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".content-row-2 .mbr-section-title\">\n\t\t\t\t\t2025\n\t\t\t\t</h4>\n\t\t\t\t<h3 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\" data-app-selector=\".content-row-2 .mbr-section-subtitle\">\n\t\t\t\t\tOutdoor Activity\n\t\t\t\t</h3>\n\t\t\t\t<p class=\"mbr-text mbr-light mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".content-row-2 .mbr-text\">\n\t\t\t\t\tLorem ipsum dolor sit amet, <br>\n\t\t\t\t\tconsectetur adipiscing elit.\n\t\t\t\t</p>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"row content-row\" mbr-if=\"timelinesAmount>6\">\n\t\t\t<div class=\"col-lg-6 col-md-6 right-wrapper right-wrapper\">\n\t\t\t\t<h4 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".content-row .mbr-section-title\">\n\t\t\t\t\t2025\n\t\t\t\t</h4>\n\t\t\t\t<h3 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\" data-app-selector=\".content-row .mbr-section-subtitle\">\n\t\t\t\t\tOutdoor Activity\n\t\t\t\t</h3>\n\t\t\t\t<p class=\"mbr-text mbr-light mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".content-row .mbr-text\">\n\t\t\t\t\tLorem ipsum dolor sit amet, <br>\n\t\t\t\t\tconsectetur adipiscing elit.\n\t\t\t\t</p>\n\t\t\t</div>\n\t\t\t<div class=\"col-lg-6 col-md-6 imageContainer\">\n\t\t\t\t<div class=\"tlv__pointer\"></div>\n\t\t\t\t<div class=\"img-wrapper\">\n\t\t\t\t\t<img src=\"../_images/gallery/gallery01.jpg\" alt=\"Mobirise\">\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"row content-row-2\" mbr-if=\"timelinesAmount>7\">\n\t\t\t<div class=\"col-lg-6 col-md-6 imageContainer-2\">\n\t\t\t\t<div class=\"tlv__pointer-2\"></div>\n\t\t\t\t<div class=\"img-wrapper-2\">\n\t\t\t\t\t<img src=\"../_images/gallery/gallery02.jpg\" alt=\"Mobirise\">\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"col-lg-6 col-md-6 left-wrapper\">\n\t\t\t\t<h4 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".content-row-2 .mbr-section-title\">\n\t\t\t\t\t2025\n\t\t\t\t</h4>\n\t\t\t\t<h3 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\" data-app-selector=\".content-row-2 .mbr-section-subtitle\">\n\t\t\t\t\tOutdoor Activity\n\t\t\t\t</h3>\n\t\t\t\t<p class=\"mbr-text mbr-light mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".content-row-2 .mbr-text\">\n\t\t\t\t\tLorem ipsum dolor sit amet, <br>\n\t\t\t\t\tconsectetur adipiscing elit.\n\t\t\t\t</p>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"tlv__item-first2\"></div>\n\t</div>\n\t<div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n\t\t<a href=\"#next\">\n\t\t\t<i class=\"mbri-down mbr-iconfont\"></i>\n\t\t</a>\n\t</div>\n</section>",
+          "_cid": "tyWT2KIXhA",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "features11-9"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            ".mbr-overlay": {
+              "background-color": "@overlayColor",
+              "opacity": "@overlayOpacity"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".btn": {
+              "border-radius": "30px",
+              "padding": "0.7rem 2.4rem",
+              "margin": "0",
+              "position": "relative",
+              "background-image": "none !important"
+            },
+            "textarea": {
+              "min-height": "130px"
+            },
+            "@media (max-width: 992px)": {
+              ".map-wrapper": {
+                "margin-bottom": "1rem"
+              }
+            },
+            ".google-map": {
+              "height": "95%",
+              "position": "relative",
+              "iframe": {
+                "height": "100%",
+                "width": "100%"
+              },
+              "[data-state-details]": {
+                "color": "#6b6763",
+                "font-family": "Montserrat",
+                "height": "1.5em",
+                "margin-top": "-0.75em",
+                "padding-left": "1.25rem",
+                "padding-right": "1.25rem",
+                "position": "absolute",
+                "text-align": "center",
+                "top": "50%",
+                "width": "100%"
+              },
+              "&[data-state]": {
+                "background": "#e9e5dc"
+              },
+              "&[data-state=\"loading\"]": {
+                "[data-state-details]": {
+                  "display": "none"
+                }
+              }
+            },
+            ".container-fluid": {
+              "max-width": "1200px"
+            },
+            "svg": {
+              "position": "relative",
+              "left": "0",
+              "top": "0"
+            },
+            ".btn:hover .inner-dashed-border": {
+              "animation-play-state": "running"
+            },
+            "@keyframes dashed_border_running": {
+              "100%": {
+                "stroke-dashoffset": "-1000"
+              }
+            },
+            "rect": {
+              "position": "absolute",
+              "width": "95%"
+            },
+            "@media (max-width: 767px)": {
+              "padding-top": "(@paddingTop * 5px)",
+              "padding-bottom": "(@paddingBottom * 5px)",
+              ".dragArea": {
+                "padding-left": "0rem"
+              }
+            },
+            "@media (min-width: 767px)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)",
+              ".container-fluid": {
+                "padding": "0 1.8rem"
+              }
+            },
+            "@media (min-width: 992px)": {
+              ".dragArea": {
+                "padding-left": "2rem"
+              }
+            },
+            ".mbr-section-title span": {
+              "display": "inline-block"
+            },
+            ".mbr-text": {
+              "margin-top": "0.5rem"
+            },
+            ".mbr-section-title when not (@showText)": {
+              "margin-bottom": "1rem"
+            },
+            ".svg1": {
+              "position": "absolute",
+              "padding": "2px",
+              "rect": {
+                "width": "~\"calc(100% - 4px)\"",
+                "height": "~\"calc(100% - 4px)\""
+              }
+            },
+            ".mbr-section-btn": {
+              "margin-left": "5px"
+            },
+            "iframe": {
+              "border-radius": "30px"
+            }
+          },
+          "_name": "forms1",
+          "_sourceTheme": "kids-m4",
+          "_customHTML": "<section class=\"form kidsm4_forms1\" group=\"Form\" plugins=\"formstyler\">\n\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"5\">\n\t\t<input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"5\">\n\t\t<header>Map</header>\n\t\t<input type=\"map\" title=\"Map\" name=\"googleMap\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\" checked=\"\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\">\n\t\t\t<input type=\"image\" title=\"Image\" value=\"../_images/children.jpg\">\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected=\"\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n\t\t<input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"(overlay &amp;&amp; bg.type=='image')\"></div>\n\n\t<div class=\"container-fluid\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-lg-6 col-md-12 map-wrapper\">\n\t\t\t\t<div class=\"google-map\" mbr-map=\"googleMap\"></div>\n\t\t\t</div>\n\t\t\t<div mbr-form=\"\" class=\"col-lg-6 my-auto pb-4 mbr-form\">\n\t\t\t\t<form action=\"\" name=\"Form Name\" method=\"POST\" class=\"mbr-form form-with-styler\">\n\t\t\t\t\t<div class=\"form-row\">\n\t\t\t\t\t\t<div hidden=\"hidden\" data-form-alert=\"\" class=\"alert alert-success col-12\">Thanks for filling\n\t\t\t\t\t\t\tout the form!</div>\n\t\t\t\t\t\t<div hidden=\"hidden\" data-form-alert-danger=\"\" class=\"alert alert-danger col-12\">Oops...! some\n\t\t\t\t\t\t\tproblem!</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"dragArea form-row\">\n\t\t\t\t\t\t<div class=\"col-lg-12 title\">\n\t\t\t\t\t\t\t<h5 mbr-theme-style=\"display-2\" class=\"mbr-fonts-style mbr-section-title\" data-app-selector=\".mbr-section-title\">\n\t\t\t\t\t\t\t\t<span class=\"line-bg-warning\">Contact me</span>\n\t\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-light\" data-app-selector=\".mbr-text\" mbr-if=\"showText\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet consectetur adipisicing elit.\n\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"col-lg-12 form-group\" data-for=\"Your name\">\n\t\t\t\t\t\t\t<input type=\"text\" name=\"Name\" placeholder=\"Your name *\" data-form-field=\"Name\" mbr-theme-style=\"display-7\" required=\"required\" class=\"form-control\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div data-for=\"E-mail\" class=\"col-lg-12 form-group\">\n\t\t\t\t\t\t\t<input type=\"tel\" name=\"E-mail\" placeholder=\"Your E-mail *\" data-form-field=\"E-mail\" mbr-theme-style=\"display-7\" class=\"form-control\" required=\"required\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div data-for=\"Message\" class=\"col-lg-12 form-group\">\n\t\t\t\t\t\t\t<textarea name=\"Message\" placeholder=\"Message\" data-form-field=\"Message\" mbr-theme-style=\"display-7\" class=\"form-control\"></textarea>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"wrapper-btn\">\n\t\t\t\t\t\t\t<div mbr-buttons=\"\" mbr-theme-style=\"display-7\" class=\"button-svg mbr-section-btn\" mbr-if=\"\" data-toolbar=\"-mbrBtnMove,-mbrBtnRemove,-mbrBtnAdd\">\n\t\t\t\t\t\t\t\t<a type=\"submit\" class=\"btn btn-primary text-truncate\" href=\"#\" data-app-placeholder=\"Type Text\">Post A Comment<svg class=\"wgl-dashes svg1 d-none inner-dashed-border animated-dashes\" fill=\"transparent\" stroke-width=\"2\" stroke-dasharray=\"9 5\" stroke-dashoffset=\"0\" stroke-linecap=\"round\">\n\t\t\t\t\t\t\t\t\t\t<rect x=\"2px\" y=\"2px\" rx=\"25px\" ry=\"25px\" width=\"100%\" height=\"100%\"></rect>\n\t\t\t\t\t\t\t\t\t</svg>\n\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</form>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "tyWT8fjrwZ",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "forms1-a"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".socicon": {
+              "font-size": "1.3rem",
+              "border-radius": "100%",
+              "width": "38px",
+              "height": "38px",
+              "display": "flex",
+              "align-items": "center",
+              "justify-content": "center",
+              "transition": ".3s",
+              "margin-right": "0.5rem",
+              "margin-left": "0.5rem",
+              "color": "#ffffff",
+              "&:before": {
+                "padding": ".6rem",
+                "border-radius": "100px",
+                "transition": "all .3s"
+              },
+              "&:hover": {
+                "&:before": {
+                  "transition": "all .3s",
+                  "border-color": "transparent"
+                }
+              },
+              "@media (max-width: 767px)": {
+                "margin-right": "0.2rem"
+              }
+            },
+            ".social-list": {
+              "a:focus": {
+                "text-decoration": "none"
+              },
+              "display": "flex",
+              "justify-content": "center"
+            },
+            ".socicon:hover": {
+              "transform": "translate(0, -10px)"
+            },
+            ".socion1": {
+              "background": "@secondaryColor"
+            },
+            ".socion2": {
+              "background-color": "lighten(@infoColor, 35%)"
+            },
+            ".socion3": {
+              "background-color": "lighten(@warningColor, -5%)"
+            }
+          },
+          "_name": "social-buttons1",
+          "_sourceTheme": "kids-m4",
+          "_customHTML": "<section group=\"Social\" class=\"social-buttons1 kidsm4_social-buttons1\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" plugins=\"SocialLikes\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header>Size</header>\n\t\t<input inline=\"\" type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"4\">\n\t\t<input inline=\"\" type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"4\">\n\t\t<header>Icons</header>\n\t\t<select title=\"Icons\" name=\"iconsCount\">\n\t\t\t<option value=\"1\">1</option>\n\t\t\t<option value=\"2\">2</option>\n\t\t\t<option value=\"3\" selected=\"\">3</option>\n\t\t\t<option value=\"4\">4</option>\n\t\t\t<option value=\"5\">5</option>\n\t\t</select>\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax=\"\">\n\t\t\t<input type=\"image\" title=\"Image\" value=\"../_images/children.jpg\" parallax=\"\">\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected=\"\">\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/201169087\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked=\"\" condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n\t\t<input type=\"range\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t</div>\n\n\t<div class=\"container\">\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"mb-0 col-md-10 col-lg-8\">\n\t\t\t\t<div class=\"social-list\">\n\t\t\t\t\t<a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n\t\t\t\t\t\t<span mbr-icon=\"\" class=\"socicon-twitter socion1 socicon mbr-iconfont\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\">\n\t\t\t\t\t\t<span mbr-icon=\"\" class=\"socicon-facebook socicon socion2 mbr-iconfont\" mbr-if=\"iconsCount > 1\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"https://instagram.com/mobirise\" target=\"_blank\">\n\t\t\t\t\t\t<span mbr-icon=\"\" class=\"socicon-instagram socicon socion3 mbr-iconfont\" mbr-if=\"iconsCount > 2\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"https://www.youtube.com/c/mobirise\" target=\"_blank\">\n\t\t\t\t\t\t<span mbr-icon=\"\" class=\"socicon-youtube socicon socion2 mbr-iconfont\" mbr-if=\"iconsCount > 3\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"https://www.behance.net/Mobirise\" target=\"_blank\">\n\t\t\t\t\t\t<span mbr-icon=\"\" class=\"socicon-behance socicon socion1 mbr-iconfont\" mbr-if=\"iconsCount > 4\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "tyWTal2pgk",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "social-buttons1-b"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".container-fluid": {
+              "max-width": "1200px",
+              "padding": "0 1.5rem"
+            },
+            ".group-title": {
+              "margin-top": "2.5rem",
+              "margin-bottom": "1.5rem",
+              "color": "#ffffff",
+              "line-height": "1.6"
+            },
+            ".navbar-logo": {
+              "width": "110px"
+            },
+            ".mbr-text": {
+              "color": "#ffffff",
+              "margin-bottom": "0"
+            },
+            ".text2": {
+              "color": "#ffffff",
+              "margin-bottom": "0"
+            },
+            ".links": {
+              "margin-top": "2rem",
+              "color": "#ffffff",
+              "line-height": "1.6"
+            },
+            ".navbar-brand": {
+              "margin": "0rem",
+              "width": "100%",
+              "margin-top": "-1.5rem"
+            },
+            ".list-item": {
+              "display": "flex",
+              "padding": "0",
+              "margin-bottom": "10px !important",
+              "align-items": "center",
+              ".item-image, .social-data": {
+                "display": "inline-block",
+                "vertical-align": "middle"
+              }
+            },
+            ".tips": {
+              "height": "75px",
+              "width": "75px",
+              "border-radius": "20px",
+              "margin": "4px",
+              "display": "inline-block"
+            },
+            ".socicon": {
+              "font-size": "1.3rem",
+              "border-radius": "100%",
+              "width": "38px",
+              "height": "38px",
+              "display": "flex",
+              "align-items": "center",
+              "justify-content": "center",
+              "transition": ".3s",
+              "margin-right": "0.5rem"
+            },
+            ".socicon:hover": {
+              "transform": "translate(0, -10px)"
+            },
+            ".socion1": {
+              "background": "@secondaryColor"
+            },
+            ".socion2": {
+              "background-color": "lighten(@infoColor, 35%)"
+            },
+            ".socion3": {
+              "background-color": "lighten(@warningColor, -5%)"
+            },
+            ".social-list": {
+              "margin-top": "2rem",
+              "display": "block",
+              "margin-bottom": "0",
+              ".soc-item": {
+                "display": "inline-block",
+                "margin": "0 .3rem"
+              },
+              "a": {
+                "transition": ".2s linear",
+                "&:hover": {
+                  "opacity": ".4"
+                }
+              }
+            },
+            ".wrapper": {
+              "background": "@ColorBg",
+              "padding": "2rem",
+              "border-radius": "30px"
+            },
+            ".svg-1": {
+              "position": "absolute",
+              "top": "0"
+            },
+            ".svg-1 path": {
+              "fill": "@LineColor"
+            },
+            ".item-image": {
+              "margin-right": "2rem"
+            },
+            "[class*=\" socicon-\"]:before": {
+              "line-height": "1",
+              "margin-left": "-1px"
+            },
+            ".soc-item::after": {
+              "display": "none"
+            },
+            ".icon1": {
+              "font-size": "2rem",
+              "font-weight": "300",
+              "color": "@secondaryColor"
+            },
+            ".icon2": {
+              "font-size": "2rem",
+              "font-weight": "300",
+              "color": "@warningColor"
+            },
+            ".icon3": {
+              "font-size": "2rem",
+              "font-weight": "300",
+              "color": "@primaryColor"
+            },
+            "@media (max-width: 991px)": {
+              ".col-sm-12": {
+                "margin-bottom": "2rem"
+              },
+              ".group-title": {
+                "margin-bottom": "10px",
+                "margin-top": "0"
+              },
+              ".tips": {
+                "width": "100%",
+                "height": "auto",
+                "max-width": "103px"
+              }
+            },
+            "@media (max-width: 767px)": {
+              "padding-top": "(@paddingTop * 5px)",
+              "padding-bottom": "(@paddingBottom * 5px)",
+              ".container-fluid": {
+                "padding": "0 1rem"
+              },
+              ".wrapper": {
+                "padding": "1rem"
+              }
+            }
+          },
+          "_name": "footer1",
+          "_sourceTheme": "kids-m4",
+          "_customHTML": "<section class=\"footer1 kidsm4_footer1\" group=\"Footers\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header>Size</header>\n\t\t<input type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"8\">\n\t\t<input type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"4\">\n\t\t<select title=\"Icons\" name=\"iconsCount\">\n\t\t\t<option value=\"1\">1</option>\n\t\t\t<option value=\"2\">2</option>\n\t\t\t<option value=\"3\" selected=\"\">3</option>\n\t\t\t<option value=\"4\">4</option>\n\t\t\t<option value=\"5\">5</option>\n\t\t\t<option value=\"6\">6</option>\n\t\t</select>\n\t\t<select title=\"Images\" name=\"imagesCount\">\n\t\t\t<option value=\"1\">1</option>\n\t\t\t<option value=\"2\">2</option>\n\t\t\t<option value=\"3\">3</option>\n\t\t\t<option value=\"4\">4</option>\n\t\t\t<option value=\"5\">5</option>\n\t\t\t<option value=\"6\" selected=\"\">6</option>\n\t\t</select>\n\t\t<input type=\"range\" inline=\"\" name=\"list1Items\" title=\"List Items\" min=\"0\" max=\"5\" value=\"3\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Logo\" name=\"showlogo\" checked=\"\">\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked=\"\">\n\t\t<header>Color</header>\n\t\t<input type=\"color\" title=\"Line\" name=\"LineColor\" value=\"#ffffff\">\n\t\t<input type=\"color\" title=\"Timetable\" name=\"ColorBg\" value=\"#45b3df\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax=\"\">\n\t\t\t<input type=\"image\" value=\"../_images/children.jpg\" title=\"Image\">\n\t\t\t<input type=\"color\" value=\"#2d4073\" title=\"Color\" selected=\"\">\n\t\t\t<input type=\"video\" value=\"https://vimeo.com/201169087\" title=\"Video\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n\t\t<input type=\"color\" title=\"Color\" name=\"overlayColor\" value=\"#656565\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n\t\t<input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n\t<svg class=\"svg-1\" data-name=\"Layer 2\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1428 72.5\">\n\t\t<path class=\"cls-1\" d=\"M-114,154.33s27.33-13,128-23c0,0,2.33,5.67,12,9.34,0,0,14.67,54.33,62.67,20a33.44,33.44,0,0,0,22.66-4s33,18.33,53-21L393,165s120,16.08,263.5,7,346.5-23.29,352-22.41S1203,147.5,1314,183V110.5H-114Z\" transform=\"translate(114 -110.5)\"></path>\n\t</svg>\n\n\t<div class=\"container-fluid\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-lg-3 col-md-6 col-sm-12\">\n\t\t\t\t<div class=\"navbar-brand\" mbr-if=\"showlogo\">\n\t\t\t\t\t<div class=\"logo\">\n\t\t\t\t\t\t<a href=\"#\">\n\t\t\t\t\t\t\t<img class=\"navbar-logo\" src=\"../_images/amimals/animals1.png\" alt=\"Mobirise\">\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<p class=\"links mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".links, .navbar-brand, .social-list\">\n\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis quisquam hic minima officiis\n\t\t\t\t\tlabore. Autem iste maiores</p>\n\t\t\t\t<div class=\"social-list\" mbr-if=\"iconsCount > 0\">\n\t\t\t\t\t<div class=\"soc-item\" mbr-if=\"iconsCount > 0\">\n\t\t\t\t\t\t<a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n\t\t\t\t\t\t\t<div mbr-icon=\"\" class=\"mbr-iconfont mbr-iconfont-social socicon-twitter socicon socion1\" style=\"color: rgb(255, 255, 255);\"></div>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"soc-item\" mbr-if=\"iconsCount>1\">\n\t\t\t\t\t\t<a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\">\n\t\t\t\t\t\t\t<div mbr-icon=\"\" class=\"mbr-iconfont mbr-iconfont-social socicon-facebook socicon socion2\" style=\"color: rgb(255, 255, 255);\"></div>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"soc-item\" mbr-if=\"iconsCount>2\">\n\t\t\t\t\t\t<a href=\"https://instagram.com/mobirise\" target=\"_blank\">\n\t\t\t\t\t\t\t<div mbr-icon=\"\" class=\"mbr-iconfont mbr-iconfont-social socicon-instagram socicon socion3\" style=\"color: rgb(255, 255, 255);\"></div>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"soc-item\" mbr-if=\"iconsCount>3\">\n\t\t\t\t\t\t<a href=\"https://instagram.com/mobirise\" target=\"_blank\">\n\t\t\t\t\t\t\t<div mbr-icon=\"\" class=\"mbr-iconfont mbr-iconfont-social socicon-skype socicon socion1\" style=\"color: rgb(255, 255, 255);\"></div>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"soc-item\" mbr-if=\"iconsCount>4\">\n\t\t\t\t\t\t<a href=\"https://instagram.com/mobirise\" target=\"_blank\">\n\t\t\t\t\t\t\t<div mbr-icon=\"\" class=\"mbr-iconfont mbr-iconfont-social socicon-instagram socicon socion2\" style=\"color: rgb(255, 255, 255);\"></div>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"soc-item\" mbr-if=\"iconsCount>5\">\n\t\t\t\t\t\t<a href=\"https://instagram.com/mobirise\" target=\"_blank\">\n\t\t\t\t\t\t\t<div mbr-icon=\"\" class=\"mbr-iconfont mbr-iconfont-social socicon-instagram socicon socion3\" style=\"color: rgb(255, 255, 255);\"></div>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"col-lg-3 col-md-6 col-sm-12\" mbr-if=\"list1Items!=0\">\n\t\t\t\t<h3 class=\"mbr-bold mbr-fonts-style group-title\" mbr-theme-style=\"display-5\" data-app-selector=\".group-title\" mbr-if=\"showTitle\">Our Contacts</h3>\n\n\t\t\t\t<div class=\"mbr-row items mbr-white\" mbr-list=\"\" mbr-list-grow=\"list1Items\">\n\t\t\t\t\t<div class=\"list-item col-sm-12\">\n\t\t\t\t\t\t<div class=\"item-image\">\n\t\t\t\t\t\t\t<a href=\"\"><span mbr-icon=\"\" class=\"mbrib-pin mbr-iconfont mbr-iconfont-btn icon1\"></span></a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"social-data\">\n\t\t\t\t\t\t\t<h5 class=\"mbr-fonts-style text2\" mbr-theme-style=\"display-7\" data-app-selector=\".list-item, .social-data, .text2\">Adress</h5>\n\t\t\t\t\t\t\t<h5 class=\"mbr-fonts-style text2\" mbr-theme-style=\"display-7\" data-app-selector=\".list-item, .social-data, .text2\">Sity Name</h5>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"list-item col-sm-12\">\n\t\t\t\t\t\t<div class=\"item-image\">\n\t\t\t\t\t\t\t<a href=\"\"><span mbr-icon=\"\" class=\"mbrib-mobile mbr-iconfont mbr-iconfont-btn icon2\"></span></a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"social-data\">\n\t\t\t\t\t\t\t<h5 class=\"mbr-fonts-style text2\" mbr-theme-style=\"display-7\" data-app-selector=\".list-item, .social-data, .text2\">123-456-78901</h5>\n\t\t\t\t\t\t\t<h5 class=\"mbr-fonts-style text2\" mbr-theme-style=\"display-7\" data-app-selector=\".list-item, .social-data, .text2\">123-456-78901</h5>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"list-item col-sm-12\">\n\t\t\t\t\t\t<div class=\"item-image\">\n\t\t\t\t\t\t\t<a href=\"\"><span mbr-icon=\"\" class=\"mbrib-chat mbr-iconfont mbr-iconfont-btn icon3\"></span></a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"social-data\">\n\t\t\t\t\t\t\t<h5 class=\"mbr-fonts-style text2\" mbr-theme-style=\"display-7\" data-app-selector=\".list-item, .social-data, .text2\">https://mobirise.com</h5>\n\t\t\t\t\t\t\t<h5 class=\"mbr-fonts-style text2\" mbr-theme-style=\"display-7\" data-app-selector=\".list-item, .social-data, .text2\">support@mobirise.com</h5>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"col-lg-3 col-md-6 col-sm-12 img-list\">\n\t\t\t\t<h3 class=\"mbr-bold mbr-fonts-style group-title\" mbr-theme-style=\"display-5\" data-app-selector=\".group-title\" mbr-if=\"showTitle\">Our Gallery</h3>\n\n\t\t\t\t<img class=\"tips\" src=\"../_images/gallery/gallery00.jpg\" alt=\"Mobirise\">\n\t\t\t\t<img class=\"tips\" src=\"../_images/gallery/gallery01.jpg\" alt=\"Mobirise\" mbr-if=\"imagesCount>1\">\n\t\t\t\t<img class=\"tips\" src=\"../_images/gallery/gallery02.jpg\" alt=\"Mobirise\" mbr-if=\"imagesCount>2\">\n\t\t\t\t<img class=\"tips\" src=\"../_images/gallery/gallery03.jpg\" alt=\"Mobirise\" mbr-if=\"imagesCount>3\">\n\t\t\t\t<img class=\"tips\" src=\"../_images/gallery/gallery04.jpg\" alt=\"Mobirise\" mbr-if=\"imagesCount>4\">\n\t\t\t\t<img class=\"tips\" src=\"../_images/gallery/gallery05.jpg\" alt=\"Mobirise\" mbr-if=\"imagesCount>5\">\n\n\t\t\t</div>\n\t\t\t<div class=\"col-lg-3 col-md-6 col-sm-12\">\n\t\t\t\t<h3 class=\"mbr-bold mbr-fonts-style group-title\" mbr-theme-style=\"display-5\" data-app-selector=\".group-title\" mbr-if=\"showTitle\">Open Hours</h3>\n\t\t\t\t<div class=\"wrapper\">\n\t\t\t\t\t<p class=\"mbr-text timetable mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".timetable\">\n\t\t\t\t\t\tMonday - Friday : 8am - 7pm <br>\n\t\t\t\t\t\tSaturday: 9am - 4pm <br>\n\t\t\t\t\t\tSunday: Closed <br>\n\t\t\t\t\t</p>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "tyWTbkzEtn",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "footer1-c"
+        }
+      ]
+    }
+  }
+}
