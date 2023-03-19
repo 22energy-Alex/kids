@@ -1,2 +1,0 @@
-# kids
-GitHub Pages
