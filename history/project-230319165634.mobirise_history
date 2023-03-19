@@ -1,0 +1,60 @@
+{
+  "settings": {
+    "name": "Kids",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "kids-m4",
+      "title": "KidsM4",
+      "styling": {
+        "primaryColor": "#ffc85b",
+        "secondaryColor": "#45b3df",
+        "successColor": "#00B15C",
+        "infoColor": "#12265a",
+        "warningColor": "#fa9db7",
+        "dangerColor": "#444444",
+        "mainFont": "Muli",
+        "display1Font": "Nunito",
+        "display1Size": 5.37,
+        "display2Font": "Nunito",
+        "display2Size": 3,
+        "display5Font": "Nunito",
+        "display5Size": 1.75,
+        "display7Font": "Muli",
+        "display7Size": 1.1,
+        "display4Font": "Muli",
+        "display4Size": 1,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false,
+        "arrowColor": "#444444"
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.8.4",
+    "siteFonts": [],
+    "imageResize": true,
+    "favicon": false,
+    "mbrsiteDomain": "nosesbfxpp",
+    "usedWebp": false,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 0,
+    "versionPublish": "5.8.4"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": []
+    }
+  }
+}
